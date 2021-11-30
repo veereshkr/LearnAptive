@@ -1,0 +1,58 @@
+{
+"c1":{
+//position:after a question, if the question has been answered correctly
+"interjects":["Hurrah! Tis is the correct answer","Absolutely Right", "Bang on! "],
+"text":"What do you want to do next?",
+"options":{
+"1":"I want to try the next question",//give next sibling/next loop in the loop
+"2":"Show me the full solution of this problem"//take to the solution of the question preceding this
+},
+}
+"c2":{
+//position:after a question, if the question has been answered incorrectly
+"interjects":["Ahh! This is a wrong answer","Sorry, your answer is not right."],
+"text":"What do you think went wrong their?",
+"options":{
+"1":"I Don't know how to solve this question. Help me learn and solve this",//take to c3
+"2":"Argh!!! I made a silly mistake I think. I would like to try solving this once more."//take to the question preceding this, with the option already tried being disbled
+} 
+}
+"c3":{
+//position:after c2, of the student selects option 1
+"interjects":[],
+"text":"Let me help you understand the problem.",
+"options":{
+"1":"I would like to solve this problem myself, with some help from the Genie.",//take to C4
+"2":"I would like to ask a tutor for an explanation",//give the contact tutor window
+"3":"Never mind. Just show me the solution"//take to the solution of the problem that the student has faced last. 
+}
+}
+"c4":{
+"text":"Lets solve a simpler problem first",
+"options":{
+"1":"proceed"//give first child of the preceeding question 
+}
+}
+"c5":{
+//position:after showing the solution
+"text":"Did you understand the solution?"
+"options":{
+"1":"yes, it was very easy",//take to c6
+"2":"No, I still have a few doubts"//take to c7
+}
+}
+"c6":{
+//position:if student chooses option 1 in c5
+"text":"Lets move to the next question."
+"options":{
+"1":"Proceed"//Take to the next sibling or to the next loop
+}
+}
+"c7":{
+//position:if student chooses option 2 in c5
+"text":"You should ask a tutor to help you to understand this problem completely."
+"options":{
+"1":"Proceed"//open the contact tutor window
+}
+}
+}

@@ -1,0 +1,22 @@
+
+.box {
+  height:284px;
+}
+.description {
+  display:none;
+}
+.nav-wrap { border-bottom: 2px solid gray; }
+#example-one {position: relative;}
+#example-one li { display: inline; }
+#example-one li a { color: gray; font-size: 14px; display: block; padding: 6px 10px 4px 10px;}
+#example-one li a:hover { color: black; }
+#magic-line { position: absolute; bottom: -2px; height: 4px; background: #006699; }
+
+
+#example2 li a { color: gray; font-size: 14px;}
+#example2 li a:hover { color: #006699; }
+
+#quotes{
+	height: 30px;
+	width: 30px;
+}

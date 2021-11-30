@@ -1,0 +1,369 @@
+{% extends 'student/dashboard.html' %}
+{% block home %}<div class="tab-pane" id="home">{% endblock %}
+{% block homeend %}</div>{% endblock %}
+{% block forum %}
+<div class="tab-pane" id="forum">
+<div class="container" style="padding-top: 30px;">
+<div>
+  <div class="col-md-12" style="border: 1px solid gray;">
+  <div class="col-md-9" style="padding-bottom: 20px; padding-top: 30px;">
+  <div class="col-xs-12 col-md-12" style="border-bottom: 1px solid gray; padding-bottom: 20px;">
+  <div style="float: left; padding-top: 5px;">Question Bank</div><div style="float: right;"><button class="btn btn-primary" id="addques">+ add question</button></div>
+  </div>
+  <div class="col-md-12" style="border-bottom: 1px solid gray; padding-bottom: 20px; padding-top: 20px;">
+  <div style="padding-bottom: 15px;">Quantitative</div>
+  <table class="table">
+   <tbody align="right">
+      <tr>
+         <td align="left">
+         <form method="get" id="formDS" action="/qbank/ds/">
+             <input type="hidden" name="dataSuff" value="DS"/>
+             <a href="/qbank/ds/?dataSuff=DS" class="postqtype">Data Sufficiency</a>
+         </form>
+         </td>
+         <td>32 Topics</td>
+         <td>425 Questions posted</td>
+      </tr>
+      <tr>
+         <td align="left">
+         <form method="get" id="formPS" action="/qbank/ps/">
+         <input type="hidden" name="probSol" value="PS" />
+         <a href="/qbank/ps/?probSol=PS" class="postqtype">Problem Solving</a>
+         </form>
+         </td>
+         <td>24 Topics</td>
+         <td>632 Questions posted</td>
+      </tr>
+   </tbody>
+</table>
+  </div>
+  <div class="col-md-12" style="padding-top: 20px;">
+  <div style="padding-bottom: 15px;">Verbal</div>
+  <table class="table">
+   <tbody align="right">
+      <tr>
+         <td align="left">
+         <form method="get" id="formRC" action="/qbank/rc/">
+         <input type="hidden" name="readComp" value="RC" />
+         <a href="/qbank/rc/?readComp=RC" class="postqtype">Reading Comprehension</a>
+         </form>
+         </td>
+         <td>32 Topics</td>
+         <td>425 Questions posted</td>
+      </tr>
+      <tr>
+         <td align="left">
+         <form method="get" id="formCR" action="/qbank/cr/">
+         <input type="hidden" name="critReas" value="CR" />
+         <a href="/qbank/cr/?critReas=CR" class="postqtype">Critical Reasoning</a>
+         </form>
+         </td>
+         <td>24 Topics</td>
+         <td>632 Questions posted</td>
+      </tr>
+      <tr>
+         <td align="left">
+         <form method="get" id="formSC" action="/qbank/sc/">
+         <input type="hidden" name="senCorr" value="SC" />
+         <a href="/qbank/sc/?senCorr=SC" class="postqtype">Sentence Correction</a>
+         </form>
+         </td>
+         <td>24 Topics</td>
+         <td>632 Questions posted</td>
+      </tr>
+   </tbody>
+</table>
+  </div>
+  </div>
+  <div class="col-md-3" align="center" style="padding-top: 35px;">
+  <div style="padding-bottom: 5px; border-bottom: 1px solid gray;">TODAY'S QUESTION</div>
+  <div style="padding-top: 10px;">Correct the sentence: <br>cjsdn cnk v c jdcn j c jenvje v jevnjer fnjefvnjre rvnjev
+  vmkmvkf  mkv mvkv mkbkr fkgkerj rnkgnkre nrkbnerj erkjnjrek rnbnrjbnb</div>
+  </div>
+  </div>
+
+  <div class="col-md-12" style="padding-bottom: 50px;"></div>
+
+  <div class="col-md-12" style="border: 1px solid gray;">
+  <div class="col-md-9" style="padding-bottom: 20px; padding-top: 30px;">
+  <div class="col-xs-12 col-md-12" style="border-bottom: 1px solid gray; padding-bottom: 20px;">
+  <div style="float: left; padding-top: 5px;">Discuss</div><div style="float: right;"><button class="btn btn-primary">+ ask question</button></div>
+  </div>
+  {% for i in "abcdefghijklmno" %}
+  <div class="col-md-12" style="border-bottom: 1px solid gray; padding-bottom: 20px; padding-top: 20px;"> 
+      <div><span>ADDED BY -SOME USER-</span><span style="padding-left: 20px;">-24 hours ago-</span></div>
+      <div><h4><a href="#">Question according to its question ID {{ i }}</a></h4></div>
+      <div style="padding-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad dolor sit amet, consectetur lorem ipsum dolor sit amet,
+      consectetur adipisicing elit, sed ...</div>
+      <button class="btn btn-primary followbtn">Follow</button><button class="btn btn-warning follownumbtn" id="fnb{{i}}">32</button>
+      <button class="btn btn-primary likebtn">Like</button><button class="btn btn-warning likenumbtn" id="lnb{{i}}">32</button>
+      <button class="btn btn-primary writeansbtn" id="wanbtn{{i}}">Write Answer</button><button class="btn btn-warning writeansnumbtn" id="wanb{{i}}">32</button>
+      <a href="#">share</a>
+      <a href="#">report</a>
+      <div class="form-group replybox" style="padding-top: 30px; display: none;" id="replybox{{i}}">
+      <div class="col-md-12" style="padding-top: 30px; background-color: #CCCCCC; padding-bottom: 20px;">
+      <div class="col-md-12">Username</div>
+      <div class="col-md-12">
+        <input type="text" name="reply" class="form-control" placeholder="write your answer here...." style="height: 50px;">
+      </div>
+      </div>
+      </div>
+      </div>
+      {% endfor %}
+  </div>
+  <div class="col-md-3" align="center" style="padding-top: 35px;">
+  <div style="padding-bottom: 5px; border-bottom: 1px solid gray;">TRENDING TOPICS</div>
+  <div style="padding-top: 10px;">
+  <button class="btn btn-default btn-sm">Random tag</button>
+  <button class="btn btn-default btn-sm">Some tag</button>
+  <button class="btn btn-default btn-sm">Another tag</button>
+  <button class="btn btn-default btn-sm">Blah tag</button>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-md-12" style="padding-bottom: 50px;"></div>
+  
+  </div>
+
+<div class="modal fade" id="addquesmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="padding-bottom: 10px;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel" align="center">Add question</h4>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+      <div class="form-group">
+      <div class="col-md-12" style="padding: 0px; background: #fff;">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <textarea placeholder="write your question here.." class="form-control" rows="4" style="border: 1px solid gray;"></textarea>
+        <div style="padding-top: 20px; padding-bottom: 50px; border-bottom: 1px solid gray;">
+        <p>upload an attachment</p>
+        <div style="border: 1px dashed gray;">
+          <span>+ add a document</span>
+          <span><input type="file" id="files"></span>
+        </div>
+        </div>
+        <div style="padding-top: 30px;">
+          <p>List all options for the answer</p>
+          <input type="checkbox">No answer has been provided
+        </div>
+        <div class="form-group" style="padding-top: 20px;">
+        <div class="col-md-12" style="padding: 0px;">
+        <input type="text" class="form-control" style="background: #CCCCCC; height: 45px; border: 1px solid gray;" name="oa" placeholder="A.">
+        <input type="text" class="form-control" style="background: #CCCCCC; height: 45px; border: 1px solid gray;" name="ob" placeholder="B.">
+        <input type="text" class="form-control" style="background: #CCCCCC; height: 45px; border: 1px solid gray;" name="oc" placeholder="C.">
+        <input type="text" class="form-control" style="background: #CCCCCC; height: 45px; border: 1px solid gray;" name="od" placeholder="D.">
+        <input type="text" class="form-control" style="background: #CCCCCC; height: 45px; border: 1px solid gray;" name="oe" placeholder="E.">
+        <div style="padding-top: 30px; padding-bottom: 30px;">
+          <p>Which is the correct answer?</p>
+          <div>
+            <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="op1" value="optiona"> A
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="op2" value="optionb"> B
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="op3" value="optionc"> C
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="op4" value="optiond"> D
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="op5" value="optione"> E
+</label>
+          </div>
+        </div>
+        <div style="padding-bottom: 30px;">
+        <button class="btn btn-primary">next</button>
+        </div> 
+      </div> 
+        </div>
+        
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  
+</div>
+{% endblock %}
+{% block tutor %}
+<div class="tab-pane active" id="tutors">
+<div class="container" style="padding-bottom: 20px;">
+<ol class="breadcrumb">
+  <li><a href="#" id="tutorlist">Tutor List</a></li>
+      <li class="active">Tutor Name</li>
+</ol>
+<div class="col-md-4" style="padding: 0px; border: 1px solid gray;">
+<div class="col-md-12" style="padding-top: 15px; padding-bottom: 25px; border-bottom: 1px dashed gray;">
+  <div class="media">
+        <a class="pull-left" href="#" style="pointer-events: none;">
+        <img class="media-object" src="#" alt="some picture here">
+       </a>
+        <div class="media-body" style="padding-left: 20px;">
+        <p class="media-heading" align="center">Josh Atlas</p>
+       <button class="btn btn-default form-control" id="sendmessage" style="background-color: #666666; color: #fff;">send message</button>
+       </div>
+        </div>
+<div align="center" style="padding-top: 20px;">Average tutor rating:</div>
+</div>
+<div class="col-md-12" style="padding-top: 15px; padding-bottom: 25px; border-bottom: 1px dashed gray;">
+<div><span style="font-size: 30px; color: #006699;"><b>73%</b></span> response rate</div>
+<div style="font-size: 12px;">Responded to: 230 students</div>
+<div style="font-size: 12px;">Response time: within 2 hours</div>
+</div>
+<div class="col-md-12" style="padding-top: 15px; padding-bottom: 25px; border-bottom: 1px dashed gray;">
+<div style="padding-bottom: 10px;">About me</div>
+<div style="font-size: 12px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+</div>
+</div>
+<div class="col-md-12" style="padding-top: 15px; padding-bottom: 25px; border-bottom: 1px dashed gray;">
+<div style="padding-bottom: 10px;">Personal Information</div>
+<div class="col-md-6" style="font-size: 12px;">Gender:</div>
+<div class="col-md-6" style="font-size: 12px;">Male</div>
+<div class="col-md-6" style="font-size: 12px;">Birthday:</div>
+<div class="col-md-6" style="font-size: 12px;">October 2, 1990</div>
+<div class="col-md-6" style="font-size: 12px;">Phone Number:</div>
+<div class="col-md-6" style="font-size: 12px;">1234567890</div>
+<div class="col-md-6" style="font-size: 12px;">Location:</div>
+<div class="col-md-6" style="font-size: 12px;">San Francisco</div>
+<div class="col-md-4" style="font-size: 12px;">Email ID:</div>
+<div class="col-md-8" style="font-size: 12px;" align="center">chaitanya.srivastav123456789<wbr>@gmail.com</div>
+</div>
+<div class="col-md-12" style="padding-top: 15px; padding-bottom: 15px; border-bottom: 1px dashed gray;">
+<div style="padding-bottom: 15px;">Pricing and details</div>
+<div style="font-size: 12px;">$150 per hour on 1-on-1 sessions</div>
+<div style="font-size: 12px; padding-bottom: 15px;">$110 per hour for group sessions</div>
+<div style="font-size: 10px;">*Travel charges will be added separately</div>
+<div style="font-size: 10px; padding-bottom: 40px;">*I also conduct group classes at my home</div>
+</div>
+</div>
+
+<div class="col-md-8" style="padding-right: 0px;">
+<div class="col-md-12" style="padding-right: 0px; padding-top: 0px; padding-left: 0px; padding-bottom: 20px;">
+<div class="col-md-12" style="border: 1px solid gray; padding-bottom: 100px;">
+  <div><span style="font-size: 30px; color: #006699;"><b>720</b></span> SAT score</div>
+  </div>
+  </div>
+<div class="col-md-12" style="padding-right: 0px; padding-top: 0px; padding-left: 0px; padding-bottom: 20px;">
+<div class="col-md-12" style="border: 1px solid gray;">
+  <div style="padding-top: 15px; padding-bottom: 15px;">Qualifications and achievements</div>
+  <p style="padding-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+  labore et</p>
+  <p style="padding-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+  labore et</p>
+  <p style="padding-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+  labore et</p>
+  </div>
+  </div>
+<div class="col-md-12" style="padding-right: 0px; padding-top: 0px; padding-left: 0px; padding-bottom: 20px;">
+<div class="col-md-12" style="border: 1px solid gray; padding-bottom: 20px;">
+<div class="pull-right" style="padding-top: 15px;"><a href="#recommendmodal" id="recommend">Recommend</a></div>
+  <div style="padding-top: 15px;">14 Recommendations</div>
+  <div class="media">
+        <a class="pull-left" href="#" style="pointer-events: none;">
+        <img class="media-object" src="#" alt="picture here">
+       </a>
+        <div class="media-body" style="padding-left: 20px;">
+       <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+       </div>
+        </div>
+        <div class="media">
+        <a class="pull-left" href="#" style="pointer-events: none;">
+        <img class="media-object" src="#" alt="some picture">
+       </a>
+        <div class="media-body" style="padding-left: 20px;">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+       </div>
+        </div>
+  </div>
+  </div>
+
+</div>
+<form method="post" action="/dashboard/#t" id="goback">{% csrf_token %}
+<button style="display: none;">submit</button>
+</form>
+</div>
+<div class="modal fade" id="messagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="padding: 0px;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel" align="center">New Message</h4>
+      </div>
+      <div class="modal-body" id="messagebody">
+      <div class="col-md-12">
+<div>To: Josh Atlas</div></div>
+<div class="col-md-12" style="padding-bottom: 20px;">
+<textarea cols="10" rows="6" placeholder="write your message..." class="form-control" id="textbody"></textarea>
+</div>
+<div align="center">
+<button class="btn btn-primary" id="send">send message</button>
+<button class="btn btn-primary" data-dismiss="modal">cancel</button>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="recommendmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="padding: 0px;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel" align="center">Write your recommendation</h4>
+      </div>
+      <div class="modal-body" id="recobody">
+      <div class="col-md-12">
+<div>For: Josh Atlas</div></div>
+<div class="col-md-12" style="padding-bottom: 20px;">
+<textarea cols="10" rows="6" placeholder="write your recommendation..." class="form-control" id="textreco"></textarea>
+</div>
+<div align="center">
+<button class="btn btn-primary" id="sendreco">submit</button>
+<button class="btn btn-primary" data-dismiss="modal">cancel</button>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block reloadstay %}
+<script>
+  $(document).navBottomTutor();
+</script>
+{% endblock %}
+{% block javascript %}
+<script type="text/javascript">
+  $('#sendmessage').click(function(){
+    $('#messagemodal').modal();
+  });
+  $('#recommend').click(function(){
+    $('#recommendmodal').modal();
+  });
+  $('#send').click(function(){
+    var mailbody = $('#textbody').val();
+    var a = '<div align="center"><img src="/static/student/images/ajax-loader.gif" />Sending Message...</div>';
+    $(document).ajaxStart(function(){
+    $('#messagebody').append(a);
+  });
+    var j = $.get('/mailsent', {m: mailbody}).done(function(data){
+      $('#messagebody').html(data);
+    }).fail(function(){
+      alert("request failed");
+    });
+  });
+
+  $("#tutorlist").click(function(){
+    $('#goback').submit();
+  });
+</script>
+{% endblock %}

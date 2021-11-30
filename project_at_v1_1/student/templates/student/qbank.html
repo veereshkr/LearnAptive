@@ -1,0 +1,42 @@
+{% extends 'student/dashboard.html' %}
+{% block home %}<div class="tab-pane" id="home">{% endblock %}
+{% block homeend %}</div>{% endblock %}
+{% block forum %}
+<div class="tab-pane active" id="forum">
+<div class="container" style="padding-top: 30px;">
+<div>
+  <div class="col-xs-12 col-md-12" style="border: 1px solid gray;">
+  <div class="col-xs-12 col-md-12" style="padding-bottom: 20px; padding-top: 30px;">
+  <div class="col-xs-12 col-md-12" style="border-bottom: 1px solid gray; padding-bottom: 20px;">
+  <div style="float: left; padding-top: 5px;">
+  <ol class="breadcrumb">
+  <li><a href="/dashboard/#f" class="clickit">Forum</a></li>
+  {% if qtype == "DS" %}
+      <li class="active">Quantitative-Data Sufficiency</li>
+      {% endif %}
+  {% if qtype == "PS" %}
+      <li class="active">Quantitative-Problem Solving</li>
+      {% endif %}
+  {% if qtype == "RC" %}
+      <li class="active">Verbal-Reading Comprehension</li>
+      {% endif %}
+  {% if qtype == "CR" %}
+      <li class="active">Verbal-Critical Reasoning</li>
+      {% endif %}
+  {% if qtype == "SC" %}
+      <li class="active">Verbal-Sentence Correction</li>
+      {% endif %}
+</ol></div><div style="float: right;"><button class="btn btn-primary">+ add question</button></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+{% endblock %}
+{% block reloadstay %}
+<script>
+  $(document).navBottomQbank();
+</script>
+{% endblock %}
+

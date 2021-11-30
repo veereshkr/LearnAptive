@@ -1,0 +1,398 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head><title>EdGenie | Test Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link href="{% static 'student/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'student/bootstrap/css/bootstrap-tour.css' %}" rel="stylesheet">
+  <link href="{% static 'student/bootstrap/css/bootstrap-tour.min.css' %}" rel="stylesheet">
+  <link href="{% static 'student/bootstrap/css/bootstrap-responsive.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/font-awesome.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/jquery-ui.min.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/jquery-ui.structure.min.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/jquery-ui.theme.min.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/signup.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/dashboard.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/collapse.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/calendar.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/jquery-ui-slider-pips.css' %}" rel="stylesheet">
+</head>
+
+<body>
+<div>
+<div class="container" style="background-color: #ffffff; padding-bottom: 20px;">
+    <div class="form-group" style="padding-top:20px;">
+    <div class="col-xs-10 col-md-10">
+            <img src="{% static 'user_register/images/learnaptive blue.png' %}" class="img-responsive" style="height: 56.69px; width: 200px;">
+
+        <div><i style="color: #808080; font-size: 9px;"> The scientific method for teaching science!</i></div>
+    </div>
+    <div class="col-xs-2 col-md-2" style="padding-top:25px; color: #666666; float: right;">
+    <a href="/dashboard/"><i class="fa fa-times fa-lg"></i> Exit Review</a>
+</div>
+    </div>
+    </div>
+
+    </div>
+<div style="padding-top: 15px; padding-bottom: 15px; background: #999999;">
+<div class="container" style="color: #fff;">Thank you for taking the test, here is your result and Genie's recommendation
+</div>
+</div>
+  <div class="container" style="padding-top: 30px; padding-bottom: 50px;">
+  <div class="col-md-1 anborcol"><h4><b>76%</b></h4>Percentile</div>
+  <div class="col-md-2 anborcol"><h4><b>730</b></h4>Overall Score</div>
+  <div class="col-md-2 anborcol"><h4><b>440</b></h4>Mathematics</div>
+  <div class="col-md-2 anborcol"><h4><b>290</b></h4>Critical Reading</div>
+  <div class="col-md-2 anborcol"><h4><b>290</b></h4>Writing</div>
+  <div class="col-md-3 anborcol"><h4><b>1m 24s</b></h4>Average speed/question</div>
+  <div class="col-md-9 anborcol" id="testgraph" style="height: 250px; padding-bottom: 10px;"></div>
+  <div class="col-md-3 anborcol" style="padding-top: 84px; padding-bottom: 84px; padding-left: 60px; padding-right: 60px;"><div class="halfCircle" align="center"><div class="innerhalfCircle" align="center"></div></div></div>
+  </div>
+  <div class="container" style="padding-bottom: 40px;">
+    <div class="col-xs-2 col-md-2"><div style="float: left; padding-right: 5px;"><div class="square" style="background: #CCCCCC;"></div></div>Your Accuracy</div>
+    <div class="col-xs-2 col-md-3"><div style="float: left; padding-right: 5px;"><div class="square" style="background: #666666;"></div></div>Impact on score/hour</div>
+  </div>
+  <div class="container">
+    <div class="col-md-12" style="padding-bottom: 20px;"></div>
+    <div class="col-md-12" style="border: 1px solid gray;">
+      <div class="col-md-4" style="padding-top: 50px; padding-bottom: 40px;  font-size: 20px;">Critical Reading</div>
+      <div class="col-md-8" style="padding-top: 40px; padding-bottom: 40px;"><div class="progress" style="margin-bottom: 0px; border-radius: 1px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+
+    </div>
+<div class="col-md-12" style="border: 1px solid gray;">
+      <div class="col-md-4" style="padding-top: 30px; padding-bottom: 10px;">Sentence Completion</div>
+      <div class="col-md-8" style="padding-top: 20px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+<div class="col-md-4" style="padding-top: 20px; padding-bottom: 10px;">Passage Based Reading</div>
+      <div class="col-md-8" style="padding-top: 10px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+
+  </div>
+
+  <div class="col-md-12" style="padding-bottom: 40px;"></div>
+    <div class="col-md-12" style="border: 1px solid gray;">
+      <div class="col-md-4" style="padding-top: 50px; padding-bottom: 40px;  font-size: 20px;">Writing</div>
+      <div class="col-md-8" style="padding-top: 40px; padding-bottom: 40px;"><div class="progress" style="margin-bottom: 0px; border-radius: 1px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+
+    </div>
+<div class="col-md-12" style="border: 1px solid gray;">
+      <div class="col-md-4" style="padding-top: 30px; padding-bottom: 10px;">Identifying sentence errors</div>
+      <div class="col-md-8" style="padding-top: 20px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+<div class="col-md-4" style="padding-top: 20px; padding-bottom: 10px;">Improving sentences</div>
+      <div class="col-md-8" style="padding-top: 10px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4" style="padding-top: 20px; padding-bottom: 10px;">Improving paragraphs</div>
+      <div class="col-md-8" style="padding-top: 10px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4" style="padding-top: 20px; padding-bottom: 10px;">Eassay writing</div>
+      <div class="col-md-8" style="padding-top: 10px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+
+  </div>
+  <div class="col-md-12" style="padding-bottom: 40px;"></div>
+  </div>
+  <div class="container">
+    <div class="col-md-12" style="border: 1px solid gray;">
+      <div class="col-md-4" style="padding-top: 50px; padding-bottom: 40px; font-size: 20px;">Mathematics</div>
+      <div class="col-md-8" style="padding-top: 20px; padding-bottom: 20px;"><div id="testbar" style="height: 100px;"></div>
+</div>
+
+    </div>
+    <div class="col-md-12" style="border: 1px solid gray; background: #CCCCCC; padding: 0px;">
+    <div class="col-md-12" style="background: #fff;">
+      <div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;"><div style="padding-top: 15px; float: left;"><i class="fa fa-angle-down fa-2x" id="angle1"></i></div>
+      <div style="padding-top: 19px; margin-left: 30px;">Number and Operations Review</div></div>
+      <div class="col-md-8" style="padding-top: 20px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-12 subtopics1" style="display: none;">
+</div>
+
+<div class="col-md-12" style="background: #fff;">
+<div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;"><div style="padding-top: 0px; float: left;"><i class="fa fa-angle-down fa-2x" id="angle2"></i></div>
+<div style="padding-top: 4px; margin-left: 30px;">Algebra and Functions Review</div></div>
+      <div class="col-md-8" style="padding-top: 10px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-12 subtopics2" style="display: none;">
+</div>
+
+<div class="col-md-12" style="background: #fff;">
+<div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;"><div style="padding-top: 0px; float: left;"><i class="fa fa-angle-down fa-2x" id="angle3"></i></div>
+<div style="padding-top: 4px; margin-left: 30px;">Geometry and Measurement Review</div></div>
+      <div class="col-md-8" style="padding-top: 10px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-12 subtopics3" style="display: none;">
+</div>
+
+<div class="col-md-12" style="background: #fff;">
+<div class="col-md-4" style="padding-top: 10px; padding-bottom: 10px;"><div style="padding-top: 0px; float: left;"><i class="fa fa-angle-down fa-2x" id="angle4"></i></div>
+<div style="padding-top: 4px; margin-left: 30px;">Data Analysis, Statistics and Probability Review</div></div>
+      <div class="col-md-8" style="padding-top: 10px; padding-bottom: 10px;"><div class="progress" style="margin-bottom: 0px;">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-12 subtopics4" style="display: none;">
+</div>
+
+    </div>
+    </div>
+<div class="col-md-12" style="padding-bottom: 40px;"></div>
+<div class="container" style="padding-bottom: 40px;">
+  <div style="font-size: 20px;">Genie's recommendation</div>
+  <div class="col-md-12" style="border: 1px solid gray;">
+  <div class="col-md-6" style="border-right: 1px dashed gray;">
+    <div>we think you need more help in  trignometry</div>
+    <div class="media" style="padding-top: 7px;">
+  <a class="pull-left" href="#">
+    <img src="{% static 'student/images/adapjustlogo.png' %}" alt="tutor pic" class="media-object">
+  </a>
+  <div class="media-body" style="padding: 10px;">
+    <h4 class="media-heading" style="padding-top: 10px; padding-bottom: 10px;">Josh Atlas<div>Tutor, Trignometry</div></h4>
+    <div>17 students have been tutored by him</div>
+    <div>14 students have recommended him</div>
+  </div>
+</div>
+<div style="padding-left: 10px;">ratings</div>
+  </div>
+
+  <div class="col-md-6">
+
+  </div>
+  </div>
+  <div class="col-md-12" style="border: 1px solid gray; padding: 15px;">
+  <div>Trignometry advanced</div>
+  <div>Percentages</div>
+  <button class="btn btn-primary" style="padding-top: 10px;">start studying</button>
+  </div>
+</div>
+
+<script src="{% static 'student/bootstrap/js/jquery.min.js' %}"></script>
+<script src="{% static 'student/bootstrap/js/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/bootstrap.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/bootstrap-tour.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/bootstrap-tour.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery.flip.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery.flip.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/some.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/custom.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery.sortable.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery-ui-slider-pips.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery.nicescroll.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/highstock.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/highcharts.js' %}"></script>
+<script type="text/javascript">
+  $('.dropdown-toggle').dropdown();
+</script>
+<script type="text/javascript">
+// var ndays = '{{days}}';
+
+//   for(var i = 0; i < ndays; i++){
+
+//   }
+//var yourLabels = ["Very Low", "Low", "Medium", "High", "Very High"];
+    var seriesOptions1 = [],
+        seriesCounter1 = 0,
+        names1 = ['Mathematics', 'Critical Reading', 'Writing'],
+        // create the chart when all data is loaded
+
+        createChart1 = function () {
+
+            $('#testgraph').highcharts('StockChart', {
+
+                rangeSelector: {
+                     enabled:false
+                },
+
+                navigator: {
+                  enabled: false
+                },
+
+                 chart: {
+
+            type: 'area'
+        },
+
+                yAxis: {
+                    labels: {
+                        formatter: function () {
+                            return this.value;
+                        }
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 2,
+                        color: 'silver'
+                    }]
+                },
+
+                plotOptions: {
+
+            area: {
+                stacking: 'normal'
+            }
+                },
+
+                tooltip: {
+                    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b><br/>',
+                    valueDecimals: 2
+                },
+                credits: {
+                  enabled: false
+                },
+                scrollbar: {
+                  enabled: false
+                },
+
+                series: seriesOptions1
+            });
+        };
+
+    $.each(names1, function (i, name) {
+        $.get('/stocks2', function(data) {
+            seriesOptions1[i] = {
+                name: name,
+                data: eval(data)
+            };
+
+            // As we're loading the data asynchronously, we don't know what order it will arrive. So
+            // we keep a counter and create the chart when all the data is loaded.
+            seriesCounter1 += 1;
+
+            if (seriesCounter1 === names1.length) {
+                createChart1();
+            }
+        });
+    });
+
+</script>
+<script type="text/javascript">
+  $(document).subTopic();
+  $(document).angle();
+</script>
+<script type="text/javascript">
+  $('#testbar').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: '',
+            style: {
+              display: 'none'
+            }
+        },
+        xAxis: {
+          enabled: false,
+            gridLineWidth: 0,
+            lineWidth: 0,
+          labels: {
+                enabled: false
+            },
+            categories: ['']
+        },
+        yAxis: {
+          enabled: false,
+            gridLineWidth: 0,
+            lineWidth: 0,
+            min: 0,
+            labels: {
+                enabled: false
+            },
+            title: {
+            text: '',
+
+            style: {
+              display: 'none'
+            }
+        }
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                stacking: 'normal'
+            }
+        },
+        tooltip: {
+            formatter: function() {
+                return ''+
+                    this.series.name +': '+ this.y +'';
+            }
+        },
+        credits: {
+                  enabled: false
+                },
+        series: [{
+            name: 'John',
+            data: [5]
+        },
+                 {
+            name: 'Joe',
+            data: [3]
+        }]
+    });
+$('.highcharts-axis').css('display','none');
+</script>
+</body>
+</html>

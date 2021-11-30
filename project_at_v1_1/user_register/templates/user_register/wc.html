@@ -1,0 +1,119 @@
+{% load staticfiles %}
+<head><title>EdGenie | Welcome and Choose</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link href="{% static 'user_register/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'user_register/bootstrap/css/bootstrap-responsive.css' %}" rel="stylesheet">
+  <link href="{% static 'user_register/stylesheets/font-awesome.css' %}" rel="stylesheet">
+  <link href="{% static 'user_register/stylesheets/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'user_register/stylesheets/signup.css' %}" rel="stylesheet">
+  <link href="{% static 'user_register/stylesheets/clingify.css' %}" rel="stylesheet">
+  <link href="{% static 'user_register/stylesheets/some.css' %}" rel="stylesheet">
+
+</head>
+<body style="background-color: #dddddd;">
+<div style="background-color: #ffffff;">
+<div class="container" style="background-color: #ffffff; padding-bottom: 30px;">
+    <div class="form-group" style="padding-top:20px;">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8" align="center">
+    <div class="col-md-12 col-xs-12">
+            <img src="{% static 'user_register/images/learnaptive blue.png' %}" class="img-responsive center-block" style="height: 56.69px; width: 200px;">
+        </div>
+        <div><i style="color: #808080; font-size: 10px;"> The scientific method for teaching science!</i></div>
+    </div>
+
+    <div class="col-md-2">
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <div style="padding-top: 70px; padding-bottom: 70px;">
+
+    <div class="col-md-3"></div>
+<div class="col-md-6" style="background-color: #ffffff;">
+
+    <div style="padding-top: 50px; padding-bottom: 70px;">
+    <div class="form-group" style="padding-top:20px;">
+    <div class="col-md-2">
+    </div>
+
+<div class="col-md-8" style="padding-bottom: 40px;" align="center">
+{% if category != 'NA' %}
+  <div style="padding-bottom: 30px; font-size: 24px; color: #666666;">Welcome to EdGenie, {{username.title}} You are a {{ category }}</div><div style="padding-bottom: 30px; color: #666666;"> lets get started with a quick tour to help you explore us better </div>
+{% else %}
+<form method="post">{% csrf_token %}
+  <div style="padding-bottom: 30px; font-size: 24px; color: #666666;">Welcome to EdGenie, {{username.title}}</div>
+  <div class="col-md-12" style="padding-bottom: 15px;">
+  <div class="col-md-12">Choose your category:
+    <select class="form-control" style="height: 50px;" name="option" autocomplete="off">
+                              <option value="ST">I am a student</option>
+                              <option value="TU">I am a tutor</option>
+                              <option value="PA">I am a parent</option>
+                            </select>
+  </div>
+  <div class="col-md-12">
+    <input type="password" class="form-control" name="pwd" style="height: 50px;" placeholder="a memorable password">
+  </div>
+  <input type="text" class="zone" name="tz" style="display: none;">
+  </div>
+  <div class="form-group">
+  <div class="col-md-12">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button class="btn btn-primary form-control" style="background-color: #006699;">submit</button>
+    </div>
+    <div class="col-md-4"></div>
+    </div>
+    </div>
+   </form>
+{% endif %}
+{% if category == 'Student' %}
+    <form action="{% url 'students:dashboard' %}">
+    <div class="form-group">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+    	<button class="btn btn-primary form-control" style="background-color: #006699;">start</button>
+    </div>
+    <div class="col-md-3"></div>
+    </div>
+    <div class="em"></div>
+    </form>
+{% endif %}
+{% if category == 'Tutor' %}
+    <form action="{% url 'tutors:tdash' %}">
+    <div class="form-group">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button class="btn btn-primary form-control" style="background-color: #006699;">start</button>
+    </div>
+    <div class="col-md-3"></div>
+    </div>
+    <div class="em"></div>
+    </form>
+{% endif %}
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+  <script src="{% static 'user_register/bootstrap/js/jquery.min.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/bootstrap.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/jquery-ui.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/jquery.flip.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/jquery.flip.min.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/jquery.clingify.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/demo.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/some.js' %}"></script>
+  <script src="{% static 'user_register/bootstrap/js/custom.js' %}"></script>
+<script type="text/javascript">
+  var d = new Date()
+  $('.zone').val(d.getTimezoneOffset());
+</script>
+</body>

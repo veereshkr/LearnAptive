@@ -1,0 +1,209 @@
+"","index","WBS","Task.Name","Score.Groups","leaf","prob"
+"1",1,".","Mathematics",NA,TRUE,NA
+"4",4,"1.1.1.","Sum and Subtraction",1,TRUE,97
+"5",5,"1.1.2.","Multiplication and division",1,TRUE,97
+"6",6,"1.1.3.","PEDMAS",2,TRUE,85
+"8",8,"1.2.1.","Introduction to Number Lines",3,TRUE,62
+"9",9,"1.2.2.","order of numbers and basic Inequality",3,TRUE,62
+"11",11,"1.3.1.","Introduction to Integers",2,TRUE,85
+"12",12,"1.3.2.","Odd-Even Numbers and their properties",3,TRUE,62
+"15",15,"1.4.1.1.","Introduction to fractions and decimals",3,TRUE,62
+"16",16,"1.4.1.2.","fraction decimal interchange",3,TRUE,62
+"17",17,"1.4.1.3.","Reciprocals",3,TRUE,62
+"18",18,"1.4.1.4.","Simplification of a fraction",3,TRUE,62
+"19",19,"1.4.1.5.","Interchanging improper and mixed fractions",3,TRUE,62
+"20",20,"1.4.1.6.","Addition and Subtraction of Fractions",4,TRUE,30
+"21",21,"1.4.1.7.","Multiplication and dvision of fractions",3,TRUE,62
+"22",22,"1.4.1.8.","Place Value",3,TRUE,62
+"24",24,"1.4.2.1.","Introduction to Percentage",3,TRUE,62
+"25",25,"1.4.2.2.","fraction percent interchange",3,TRUE,62
+"26",26,"1.4.2.3.","Percent Change",4,TRUE,30
+"27",27,"1.4.2.4.","Chain Percentage",5,TRUE,7
+"28",28,"1.4.2.5.","Inverting Percent change",5,TRUE,7
+"31",31,"1.5.1.1.","Introduction to squaring",2,TRUE,85
+"32",32,"1.5.1.2.","Squaring Negative Integers",3,TRUE,62
+"33",33,"1.5.1.3.","Perfect Square Numbers",2,TRUE,85
+"34",34,"1.5.2.","Square root of integers",3,TRUE,62
+"35",35,"1.5.3.","Square of Fractions",4,TRUE,30
+"38",38,"1.6.1.1.","Tricks to check Divisibly by specific numbers",2,TRUE,85
+"40",40,"1.6.1.2.1.","Introduction to Multiples",3,TRUE,62
+"41",41,"1.6.1.2.2.","LCM",4,TRUE,30
+"42",42,"1.6.1.3.","remainders",4,TRUE,30
+"44",44,"1.6.2.1.","Identify factors of natural numbers",1,TRUE,97
+"45",45,"1.6.2.2.","Prime Factorization",4,TRUE,30
+"46",46,"1.6.2.3.","GCF",4,TRUE,30
+"47",47,"1.6.3.","Prime Numbers",4,TRUE,30
+"50",50,"1.7.1.1.","Introduction to ratio",3,TRUE,62
+"51",51,"1.7.1.2.","Chain ratio",4,TRUE,30
+"52",52,"1.7.2.","Proportion",4,TRUE,30
+"54",54,"1.8.1.","pattern identification in a sequence of numbers",2,TRUE,85
+"55",55,"1.8.2.","Arithmetic Progression",3,TRUE,62
+"56",56,"1.8.3.","Geometric Progression",4,TRUE,30
+"57",57,"1.8.4.","Mixed/others",4,TRUE,30
+"59",59,"1.9.1.","Simple one step rate (work rate, commision etc) problems",1,TRUE,97
+"60",60,"1.9.2.","Involving simple unitery methods",2,TRUE,85
+"61",61,"1.9.3.","Ratio, proportion percent(direct)",4,TRUE,30
+"62",62,"1.9.4.","Ratio, proportion, percent (indirect)",5,TRUE,7
+"64",64,"1.10.1.","Listing all possible options",4,TRUE,30
+"66",66,"1.10.2.1.","Introduction to permutation",5,TRUE,7
+"67",67,"1.10.2.2.","Restricted Permutations",5,TRUE,7
+"68",68,"1.10.2.3.","Permutation of items where multiple copies of same item are present",5,TRUE,7
+"70",70,"1.10.3.1.","Introduction to combination",5,TRUE,7
+"71",71,"1.10.3.2.","Making team of...",5,TRUE,7
+"72",72,"1.10.3.3.","All possible pair",5,TRUE,7
+"74",74,"1.11.1.","Arithmetic operations between terms containing positive integers in exponents",2,TRUE,85
+"75",75,"1.11.2.","Inequalities of exponents",3,TRUE,62
+"76",76,"1.11.3.","Negative exponents",5,TRUE,7
+"77",77,"1.11.4.","Fractional Expoents",5,TRUE,7
+"78",78,"1.11.5.","Scientific Notation",2,TRUE,85
+"79",79,"1.12.","Logical Reasoning",1,TRUE,97
+"81",81,"1.13.1.","Speed and Distance",2,TRUE,85
+"82",82,"1.13.2.","Work Rate",2,TRUE,85
+"84",84,"2.1.","Basic Algebraic operations",1,TRUE,97
+"86",86,"2.2.1.","difference of square",2,TRUE,85
+"87",87,"2.2.2.","taking common terms out",2,TRUE,85
+"88",88,"2.2.3.","middle term expansion of quadratic expression",2,TRUE,85
+"89",89,"2.2.4.","cube difference",2,TRUE,85
+"91",91,"2.3.1.","Problems involving positive integral exponents",3,TRUE,62
+"92",92,"2.3.2.","Inequalities of exponents",4,TRUE,30
+"93",93,"2.3.3.","Negative exponents",5,TRUE,7
+"94",94,"2.3.4.","Fractional Expoents",5,TRUE,7
+"96",96,"2.4.1.","Introduction to solving equation",2,TRUE,85
+"97",97,"2.4.2.","Solve one variable in terms of others",5,TRUE,7
+"98",98,"2.4.3.","Solving equations with abstract setting",3,TRUE,62
+"99",99,"2.4.4.","solving two step linear equations",3,TRUE,62
+"100",100,"2.4.5.","Solving Radical Equations",5,TRUE,7
+"101",101,"2.4.6.","Consider a combination(mostly linear) of variables as a single variable and solve for it",2,TRUE,85
+"102",102,"2.4.7.","Check if a value satisfy a linear or quadratic equation",2,TRUE,85
+"103",103,"2.4.8.","Simple equations containing special symbols",3,TRUE,62
+"104",104,"2.5.","Absolute Value",5,TRUE,7
+"106",106,"2.6.1.","single step, simple",4,TRUE,30
+"107",107,"2.6.2.","Multistep",6,TRUE,1
+"108",108,"2.7.","equation of two variables, (solving and checking a pair of value is a solution)",3,TRUE,62
+"109",109,"2.8.","Quadratic Equations",4,TRUE,30
+"110",110,"2.9.","ratio percentage problem with algebraic expression",6,TRUE,1
+"111",111,"2.10.","Rational Equation",5,TRUE,7
+"113",113,"2.11.1.","Direct Proportionality",2,TRUE,85
+"114",114,"2.11.2.","Inverse proportionality",2,TRUE,85
+"116",116,"2.12.1.","replacing words with symbols",1,TRUE,97
+"117",117,"2.12.2.","forming a linear equation or pair of equations",3,TRUE,62
+"118",118,"2.12.3.","involving exponential growth",3,TRUE,62
+"119",119,"2.12.4.","Involving linear relationships",6,TRUE,1
+"120",120,"2.12.5.","word problems with proportionality",6,TRUE,1
+"121",121,"2.12.6.","Involving nonlinear settings",6,TRUE,1
+"123",123,"2.13.1.","Basics of Function, value calculation",3,TRUE,62
+"124",124,"2.13.2.","Linear functions",3,TRUE,62
+"125",125,"2.13.3.","Quadratic function",4,TRUE,30
+"127",127,"2.13.4.1.","Introduction to graph of functions",4,TRUE,30
+"128",128,"2.13.4.2.","Graph of linear functions",4,TRUE,30
+"129",129,"2.13.4.3.","Graph of quadratic function",5,TRUE,7
+"130",130,"2.13.4.4","Finding root of function from graph",6,TRUE,1
+"131",131,"2.13.4.5.","Translation of function and effect on graph",6,TRUE,1
+"132",132,"2.13.4.6.","Special symbol functions",5,TRUE,7
+"133",133,"2.13.5.","nested functions",5,TRUE,7
+"134",134,"2.13.6.","Function of two variables",3,TRUE,62
+"135",135,"2.13.7.","Deriving functions from tables of observations",4,TRUE,30
+"138",138,"3.1.1.","Introduction to points and lines",1,TRUE,97
+"139",139,"3.1.2.","Colinear points",2,TRUE,85
+"141",141,"3.2.1.","Introduction to angle and angle measurements",1,TRUE,97
+"142",142,"3.2.2.","Angles at intersecting lines",4,TRUE,30
+"143",143,"3.2.3.","Angles generated by intersecting two parallel lines",4,TRUE,30
+"144",144,"3.2.4.","Angles of a triangle",2,TRUE,85
+"145",145,"3.2.5.","Angles of a polygon",3,TRUE,62
+"147",147,"3.3.1.","Introduction to Triangle and its components",1,TRUE,97
+"148",148,"3.3.2.","Perimeter of a triangle",2,TRUE,85
+"149",149,"3.3.3.","Area of a triangle",3,TRUE,62
+"151",151,"3.3.4.1.","Introduction to equilateral Triangle",2,TRUE,85
+"152",152,"3.3.4.2.","Area of equilateral Triangles",3,TRUE,62
+"154",154,"3.3.5.1.","Introduction to Isosceles Triangle",2,TRUE,85
+"155",155,"3.3.5.2.","Area of Isosceles Triangles",3,TRUE,62
+"157",157,"3.3.6.1.","Introduction to Right angled triangle",3,TRUE,62
+"158",158,"3.3.6.2.","Pythagoras' Theorem and its application",4,TRUE,30
+"159",159,"3.3.6.3.","Area of Right angled triangle",3,TRUE,62
+"160",160,"3.3.7.","Triangle Congruence Rules",3,TRUE,62
+"161",161,"3.3.8.","Similar Triangles",5,TRUE,7
+"162",162,"3.3.9.","Triangle Inequality",3,TRUE,62
+"164",164,"3.4.1.","Introduction to Quadrilaterals",1,TRUE,97
+"166",166,"3.4.2.1.","Introduction to parallelogram",2,TRUE,85
+"167",167,"3.4.2.2.","Area of parallelogram",4,TRUE,30
+"169",169,"3.4.3.1.","Introduction to Rectangle",2,TRUE,85
+"170",170,"3.4.3.2.","Diagonal of rectangle",4,TRUE,30
+"171",171,"3.4.3.3.","Area of the ribbon around the rectangle",4,TRUE,30
+"172",172,"3.4.4.","Square",2,TRUE,85
+"173",173,"3.5.","Polygon",3,TRUE,62
+"175",175,"3.6.1.","Introduction to circle",1,TRUE,97
+"177",177,"3.6.2.1.","Tangent is perpendicular to radius",6,TRUE,1
+"178",178,"3.6.2.2.","Circles tangent to each other",6,TRUE,1
+"179",179,"3.6.3.","Length of circumference",2,TRUE,85
+"180",180,"3.6.4.","Idea of Radian",4,TRUE,30
+"182",182,"3.6.5.1.","Angle in centre is twice of angle at circumference",4,TRUE,30
+"183",183,"3.6.5.2.","traingle with one side as diameter is always right angled",5,TRUE,7
+"186",186,"3.7.1.1.","Introduction to Cuboids",4,TRUE,30
+"187",187,"3.7.1.2.","Volume",4,TRUE,30
+"188",188,"3.7.1.3.","Diagonals",5,TRUE,7
+"190",190,"3.7.2.1.","Introduction to Cylinders",4,TRUE,30
+"191",191,"3.7.2.2.","Curve surface Area",5,TRUE,7
+"192",192,"3.7.2.3.","Volume",5,TRUE,7
+"194",194,"3.7.3.1.","Introduction to sphere and hemisphere",5,TRUE,7
+"195",195,"3.7.3.2.","Volume",5,TRUE,7
+"196",196,"3.7.3.3.","Outer Surface Area",5,TRUE,7
+"197",197,"3.7.3.4.","crosssection area at x distance from centre",6,TRUE,1
+"199",199,"3.7.4.1.","Introduction to prism",5,TRUE,7
+"200",200,"3.7.4.2.","Surface Areas",5,TRUE,7
+"201",201,"3.7.4.3.","Volume",5,TRUE,7
+"203",203,"3.7.5.1.","Introduction to cone",5,TRUE,7
+"204",204,"3.7.5.2.","Volume",5,TRUE,7
+"205",205,"3.7.5.3.","surface Area",5,TRUE,7
+"207",207,"3.8.1.","Introduction to Co-ordinate Geometry",4,TRUE,30
+"208",208,"3.8.2.","Distance between two points",4,TRUE,30
+"209",209,"3.8.3.","Midpoint of a line segment",4,TRUE,30
+"211",211,"3.8.4.1.","Introduction to slope of a straight line",4,TRUE,30
+"212",212,"3.8.4.2.","Slope of parallel lines",5,TRUE,7
+"213",213,"3.8.4.3.","slope of perpendicular lines",5,TRUE,7
+"215",215,"3.9.1.","Translation",6,TRUE,1
+"216",216,"3.9.2.","Rotation",6,TRUE,1
+"217",217,"3.9.3.","Reflection",6,TRUE,1
+"218",218,"3.10.","Locus",5,TRUE,7
+"219",219,"3.11.","Using algebra in Geometry context",2,TRUE,85
+"220",220,"3.12.","Word Geometry Problem",3,TRUE,62
+"221",221,"3.13.","Constructions",5,TRUE,7
+"222",222,"3.14.","Combining well known Geometric Figures",4,TRUE,30
+"225",225,"4.1.1.","Reading and direct interpretation of line, column and bar diagram and pictograms",1,TRUE,97
+"226",226,"4.1.2.","Analyzing line, column, bar diagram ( doing some mental math on it)",2,TRUE,85
+"227",227,"4.1.3.","Pie Chart",4,TRUE,30
+"228",228,"4.1.4.","Coordinate Graph",4,TRUE,30
+"229",229,"4.2.","convert words into graph",5,TRUE,7
+"230",230,"4.3.","Tabular Data interpretation",3,TRUE,62
+"233",233,"4.4.1.1.","Introduction to AM",2,TRUE,85
+"234",234,"4.4.1.2.","Idea of AM in Algebra",3,TRUE,62
+"235",235,"4.4.1.3.","Weighted AM",3,TRUE,62
+"237",237,"4.4.2.1.","no of observation is odd",5,TRUE,7
+"238",238,"4.4.2.2.","No of observation is even",5,TRUE,7
+"239",239,"4.4.3.","Mode",2,TRUE,85
+"241",241,"4.4.4.1.","Introduction to Probability",5,TRUE,7
+"242",242,"4.4.4.2.","Independence of events",6,TRUE,1
+"243",243,"4.4.4.3.","Conditional Probability",6,TRUE,1
+"244",244,"4.4.4.4.","Geometric Probability",6,TRUE,1
+"246",246,"4.5.1.","Introduction to set",4,TRUE,30
+"247",247,"4.5.2.","Union",4,TRUE,30
+"248",248,"4.5.3.","Intersection",4,TRUE,30
+"249",249,"4.5.4.","Set Word Problem (Venn Diagram)",4,TRUE,30
+"250",250,"4.5.5.","Inclusion Exclusion ?",5,TRUE,7
+"252",252,"5.1.","used ""choose"" but means permutation",5,TRUE,7
+"253",253,"5.2.","Back Calculation",2,TRUE,85
+"254",254,"5.3.","Solution is integer",3,TRUE,62
+"255",255,"5.4.","Guestimate",2,TRUE,85
+"256",256,"5.5.","optimisation",4,TRUE,30
+"257",257,"5.6.","Solution is not integer",4,TRUE,30
+"258",258,"5.7.","when ""x is positive"" is mentioned, omit negative or 0 solution",3,TRUE,62
+"259",259,"5.8.","Finding complement of the answer instead of solving directly",5,TRUE,7
+"260",260,"5.9.","Negative Question",3,TRUE,62
+"261",261,"5.10.","Redundant Informations",3,TRUE,62
+"262",262,"5.11.","anything product 0 is 0",4,TRUE,30
+"263",263,"5.12.","Corrections to AM",4,TRUE,30
+"264",264,"5.13.","different units",3,TRUE,62
+"265",265,"5.14.","Decomposition of geometric figures into well known ones",4,TRUE,30
+"266",266,"5.15.","sum is symmetric",3,TRUE,62
+"267",267,"5.16.","Shaded region doesn't always ask for area",4,TRUE,30
+"268",268,"5.17.","plug in",4,TRUE,30
+"269",269,"5.18.","Algebraic Identities",5,TRUE,7

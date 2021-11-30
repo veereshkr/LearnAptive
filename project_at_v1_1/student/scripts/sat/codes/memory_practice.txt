@@ -1,0 +1,94 @@
+====================
+====================
+Date_time: Wed Oct 29 20:14:27 2014 
+====================
+Date_time: Wed Oct 29 20:15:43 2014 
+====================
+Date_time: Wed Oct 29 20:22:01 2014 
+first answer is right 
+second answer is right 
+ 
+first answer is right 
+second answer is wrong 
+ 
+====================
+Date_time: Wed Oct 29 20:23:37 2014 
+first answer is right 
+second answer is wrong 
+ 
+====================
+Date_time: Wed Oct 29 20:27:44 2014 
+time taken to memorize 7.42435216904: 
+' '*30 Wed Oct 29 20:31:41 2014 
+=============================================
+time taken to memorize 4.55133318901: 
+first answer is right
+second answer is right 
+time take to recall 6.69593691826: time taken to memorize 13.5999109745: 
+first answer is right
+second answer is right 
+time take to recall 8.5920009613: ' '*30 Wed Oct 29 20:35:37 2014 
+=============================================
+time taken to memorize 2.124 seconds: 
+first answer is right
+second answer is wrong 
+time take to recall 4.0 seconds: 
+ 
+time taken to memorize 1.881 seconds: 
+first answer is wrong
+second answer is wrong 
+time take to recall 4.0 seconds: 
+ 
+' '*30 Wed Oct 29 20:39:01 2014 
+=============================================
+Number: 3065 
+time taken to memorize 4.158 seconds: 
+first answer is right
+second answer is wrong 
+time take to recall 7.0 seconds: 
+ 
+Number: 3702 
+time taken to memorize 3.2 seconds: 
+first answer is wrong
+second answer is wrong 
+time take to recall 12.0 seconds: 
+ 
+' '*30 Wed Oct 29 20:31:02 2014 
+=============================================
+time taken to memorize 1.46030211449: 
+		Wed Oct 29 20:47:34 2014 
+		====================
+Number: 7289 
+time taken to memorize 6.191 seconds: 
+first answer is right
+second answer is right 
+time take to recall 7.0 seconds: 
+ 
+Number: 9553 
+time taken to memorize 1.352 seconds: 
+first answer is right
+second answer is wrong 
+time take to recall 5.0 seconds: 
+ 
+		Wed Oct 29 20:49:15 2014 
+		====================
+Number: 9548 
+time taken to memorize 1.36 seconds: 
+first answer is right
+second answer is wrong 
+time take to recall 4.0 seconds: 
+ 
+Number: 1524 
+time taken to memorize 2.153 seconds: 
+first answer is wrong
+second answer is wrong 
+time take to recall 2.0 seconds: 
+ 
+		Wed Oct 29 20:47:08 2014 
+		====================
+Number: 5754 
+time taken to memorize 18.652 seconds: 
+first answer is wrong
+second answer is wrong 
+time take to recall 3.0 seconds: 
+ 

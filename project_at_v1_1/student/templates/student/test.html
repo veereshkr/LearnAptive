@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head><title>Diagnostic Test</title>
+<body>
+<form method='post' class = 'choice-form'>{% csrf_token %}
+{{question|safe}}
+</form>
+<form method="post">{% csrf_token %}
+<input type="text" name="skip" value="0" style="display: none;">
+<button id="skipbtn">skip</button>
+</form>
+<form method="post">{% csrf_token %}
+<input type="text" name="quit" value="q" style="display: none;">
+<button id="quitbtn">quit</button>
+</form>
+<script src="{% static 'student/bootstrap/js/jquery.min.js' %}"></script>
+<script type="text/javascript">
+	$('.choice').click(function(){
+		$('.btn').removeAttr('disabled', 'disabled');
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+* algo discussed with Neel
+  Jargon:-
+  DAG:- Directed acyclic Graph
+  Descendant:- the descendant of a tag/concept is those concepts which must be learnt before learning that particular tag. For example fraction sum can’t be taught if the student doesn’t know LCM. So, LCM is a descendant of fraction Sum
+  Ancestor:- tag A is ancestor of tag B if tag B is a descendant of tag A. In the above example, fraction sum is an ancestor of LCM.
+  Tag-set:- The tag-set of a question is the set of all tags present in the question and their descendants.
+  Objective/Output:- 
+  The first lesson to give to the student/All the lessons needed to give to the student. 
+  An estimate of his SAT score
+  
+  Inventory:-
+  DAG of all the tags
+  Impact/importance of every tag in SAT
+  population probability of a student knowing a tag.
+  At least one question for each leaf level tag in the DAG, at least one question for all 2-tag pairing from the leaf level tags in the DAG, few high complexity questions containing 3/4 tags belonging to mid/top of the DAG(few means at least 20-25).
+  The difficulty of all these questions. The difficulty should be a function of all the tags present in the question ( and their descendents too, maybe). the population probability of knowing a concept may come handy here. Also, the function should be such that more the number of tags present, more the difficulty of the problem.
+  
+  Assumptions:-
+  Unless we have any data on the students knowledge about a certain tag, we approximate it with the population probability. The knowledge can be obtained from either 
+  His answer of questions that contain that particular tag
+  His ignorance about any child of that tag in the DAG.
+  His knowledge of any parent of that tag in DAG
+  If we have asked one or more questions on that tag, the probability of the student knowing that tag is the proportion of correct answer to all those questions that contain that particular tag. (??)
+  If a student answers a questions correctly, the estimate of the probability of the student knowing all the tags present in the question, as well as that of all their descendants increase. On the other hand, If a student fails to answer a question correctly, the estimation of the probability of the student knowing all the tags present in the question as well as that of all their ancestors will decrease. 
+  
+  Procedure
+  Score Prediction:
+  One of the following methods.
+  a) 1  parametric IRT.
+  b) multidimensional IRT(4 dimension(theta’s) for 4 sections)
+  c) IRT + Binary search hybrid (defined below)
+  
+  Score Decomposition:
+  Initially this is based on the first interactive test.
+  Following algos can be used:
+  calculate the performance of each section 
+  based on the answers on that section (detailed algo to
+  be come)
+  If we use multidimensional IRT then theta for each section corresponds to strength of that section.
+  
+  Initial Recommendation:
+  Figure out the tags in the weakest section which student has a low probability of
+  knowing and which are higher up in the hierarchy (detail algo to come). Then
+  give the lessons based on those tags.
+  
+  Later Recommendation:
+  Quiz the student based on the last lessons(may be 2 questions), also asked some independent tags and mixture (of last lessons and independent concepts) integrate the information with the past information and then figure out the next recommendation (detail
+  algo to come).
+  
+  IRT+Binary Search algo:-
+  The method of estimating theta will be same as that used in IRT. But for selecting the next question, instead of maximising information, we will use the following algo. 
+  If the student answers the current question correctly, we will select the next question whose tag-set is exclusive from the union of tag-sets used in all previous questions, and which has a higher difficulty than the previous question. But if the student answer wrong, we will do the following 
+  First we will check whether we can ascertain (from the option chosen by the student) which of the tags present in the question that is not known to the student. 
+  If we succeed in that, we will proceed with the next question which doesn’t contain this tag, or any of the tags previously tested, and also has a lower difficulty. 
+  If we can’t ascertain, we will use a binary search method. We will give another question which contains half of the tags present in the original questions, if the student fails to answer we will put another question containing half of the tags present in this question and go on until we can pin-point a single tag that the student doesn’t know. In the process, If the student answer any question accurately, we will select half of the remaining tags and put a question containing those tags. Thus, at the end of the method, we will know exactly which of the tags present in the questions is not known to the student. 
+  
+  
+  Alternate Ideas:-
+  Instead of fixing the number of questions in the test, we can also fix the time of the test. And also give a max time for each question. If a student can’t answer one particular question  in the time given, we assume that he cant answer and show him the next question. But if a student answers fast, he will get more questions and will get a higher score estimate with a lower variance in estimation. 

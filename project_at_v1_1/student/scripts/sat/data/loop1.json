@@ -1,0 +1,206 @@
+{
+"Q1": {
+"qn_txt": "The ratio of manufacturing cost of item A and item B is 3:5. The manufacturer sets the printed selling price of both the items 30% higher than their respective manufacturing cost. If the Seller gives 10% off on the printed prices and makes a profit of \\$40.8 by selling both the items, what is the difference in manufacturing cost of item A and item B?",
+"qn_image_path": "",
+"type": "MC1",
+"difficulty": 5,
+"options": {
+"1": "\\$50",
+"2": "\\$60",
+"3": "\\$90",
+"4": "\\$150",
+"5": "\\$240",
+"6": "I do not understand this question"
+},
+"correct": [
+"2"
+],
+"tags": [
+"1.7.1.3.",
+"1.7.1.2.",
+"1.7.1.1.",
+"1.7.2.1.",
+"1.1.2.1.",
+"1.1.1."
+],
+"parent": "",
+"siblings": [],
+"children": [
+"Q1.1",
+"Q1.2",
+"Q1.3"],
+"solution":["Con1","S1.1.1","S1.2","Con3","Con4","S1.3.1","Con5","S1.3.2"]
+},
+"Q1.1":{
+"qn_txt":"If the Printed price of an item is 30% more than its production cost, and the selling price of the item is 10% less than the printed price, how much profit did the seller make over the printed price?",
+"qn_image_path":"",
+"type":"MC1",
+"difficulty":3,
+"options":{
+"1":"40%",
+"2":"20%",
+"3":"17%",
+"4":"13%",
+"5":"10%",
+"6":"I do not understand this question"
+},
+
+"correct":["3"],
+"tags":[
+"1.7.1.3.",
+"1.7.1.2.",
+"1.7.1.1.",
+"1.1.2.1.",
+"1.1.1."],
+"parent":"Q1",
+"siblings":["Q1.2","Q1.3"],
+"children":["Q1.1.1","Q1.1.2"],
+"solution":["Con2","S1.1.1","S1.1.2","Con3"]},
+"Q1.1.1":{
+"qn_txt":"If the production cost of an item is \\$100 and the printed selling price of the item is 30% more than the production cose, what is the printed selling price?",
+"qn_image_path":"",
+"type":"SR1",
+"difficulty":1,
+"options":{
+  "1":"$ {textbox}",
+  "2":"I don't understand this question"
+},
+"correct":"x==130",
+"tags":["1.7.1.2.","1.7.1.1.","1.1.2.1.","1.1.1."],
+"parent":"Q1.1",
+"siblings":["Q1.1.2"],
+"children": "",
+"solution":["Con2","S1.1.1"]},
+"Q1.1.2":{
+  "qn_txt":"If the Printed price of an item is \\$130 and the seller sells the item at 10% less than the printed price, what is the selling price of the item?",
+  "qn_image_path":"",
+  "type":"SR1",
+  "difficulty":2,
+  "options":{
+   "1":"$ {textbox}",
+  "2":"I don't understand this question"
+
+  },
+  "correct":"x==117",
+  "tags":["1.7.1.2.","1.7.1.1.","1.1.2.1.","1.1.1."],
+  "parent":"Q1.1",
+  "siblings":["Q1.1.1"],
+  "children":[],
+"solution":["S1.1.2"]},
+  "Q1.2": {
+    "qn_txt": "If 17% of some amount is \\$40.8, what is the total amount?",
+    "qn_image_path": "",
+    "type": "MC1",
+    "difficulty": 2,
+    "options": {
+      "1": "\\$2.4",
+      "2": "\\$6.93",
+      "3": "\\$170",
+      "4": "\\$240",
+      "5": "\\$693",
+      "6": "I do not understand this question"
+    },
+    "correct": [
+      "4"
+    ],
+    "tags": [
+      "1.7.1.1.",
+      "1.1.2.1."
+    ],
+    "parent": "Q1",
+    "siblings": [
+      "Q1.1",
+      "Q1.3"
+    ],
+    "children": [],
+    "solution": [
+      "S1.2"
+    ]
+  },
+  "Q1.3": {
+    "qn_txt": "If the ratio of cost of item A to the cost of item B is 3:5 and the total cost of the two item is \\$240 then what is the cost of item A and item B respectively?",
+    "qn_image_path": "",
+    "type": "SR1",
+    "difficulty": 3,
+    "options": {
+      "1": "$ {textbox}",
+      "2": "I do not understand this question"
+    },
+    "correct": [
+      "\\$90"
+    ],
+    "tags": [
+      "1.7.1.1.",
+      "1.1.2.1."
+    ],
+    "parent": "Q1",
+    "siblings": [
+      "Q1.1",
+      "Q1.2"
+    ],
+    "children": [
+      "Q1.3.1",
+      "Q1.3.2"
+    ],
+    "solution": [
+      "S1.3.1",
+      "Con3",
+      "S1.3.2"
+    ]
+  },
+  "Q1.3.1": {
+    "qn_txt": "If the ratio of production cost of item A to that of item B is 3:5, what portion of the total production cost is the production cost of item A?",
+    "qn_image_path": "",
+    "type": "MC1",
+    "difficulty": 2,
+    "options": {
+      "1": "$\\frac{3}{5}$",
+      "2": "$\\frac{2}{5}$",
+      "3": "$\\frac{3}{8}$",
+      "4": "$\\frac{5}{8}$",
+      "5": "$\\frac{2}{3}$",
+      "6": "I do not understand this question"
+    },
+    "correct": [
+      "3"
+    ],
+    "tags": [
+      "1.7.2.1."
+    ],
+    "parent": "Q1.3",
+    "siblings": [
+      "Q1.3.2"
+    ],
+    "children": [],
+    "solution": [
+      "S1.3.1"
+    ]
+  },
+  "Q1.3.2":{
+  "qn_txt":"what is the $\\frac{3}{8}$th of \\$240?",
+  "qn_image_path":"",
+  "type":"SR1",
+  "difficulty":2,
+  "options":{
+   "1":"$ {textbox}",
+  "2":"I don't understand this question"
+  },
+  "correct":"x==90",
+  "tags":["1.1.2.1."],
+  "parent":"Q1.3",
+  "siblings":"Q1.3.1",
+  "children":"",
+  "solution":["S1.3.2"]},
+"Con1":"Let us, for the time being, treat the two items together as a single item. Let the production cost of the item be \\$100.",
+"Con2":"The production cost of the item is \\$100.",
+"S1.1.1":"Now, the printed price is 30% more than the production cost. Therefore, the printed price is $$\\$(100+100\\times30\\%)=\\$130$$",
+"S1.1.2":"The selling price is 10% less than the printed price. Now, 10% of \\$130 is \\$13. Therefore the selling price is $$\\$130-\\$13=\\$117.$$",
+"Con3":"The production cost of the item is \\$100 and the selling price is \\$117. Hence seller made \\$17 profit. <br> Now \\$17 profit on \\$100 production cost means the seller made 17% profit.",
+"S1.2":" 17% of some amount is \\$40.8.<br> 1% of the amount is $\\$\\frac{40.8}{17}$<br> the whole amount (i.e. 100%) is $$\\$\\frac{40.8}{17}\\times100=\\$2.4\\times100=\\$240 $$",
+"Con4":"Therefore, The total production cost of the two items is \\$240. Now,",
+"Con5":"Therefore cost of item A = ",
+"S1.3.1":"The ratio of production cost of item A and item B is 3:5. Let the cost of Item A is \\$$3x$. Then the cost of item B is \\$$5x$. Total cost is \\$$(3x+5x)=\\$8x$. Hence, the production cost of item A is $\\frac{3x}{8x}=\\frac{3}{8}$th portion of the total cost.<br>",
+"S1.3.2":"\\$$240\\times\\frac{3}{8}$=\\$90.<br>Therefore cost of item B is \\$240-\\$90=\\$150"
+
+}
+

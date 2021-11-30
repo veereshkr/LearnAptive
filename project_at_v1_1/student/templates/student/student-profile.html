@@ -1,0 +1,535 @@
+{% load staticfiles %}
+<head><title>EdGenie | Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link href="{% static 'student/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'student/bootstrap/css/bootstrap-responsive.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/font-awesome.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/signup.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/jquery-ui.min.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/jquery-ui.structure.min.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/jquery-ui.theme.min.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/dashboard.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/collapse.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/calendar.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/datepicker.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/toggle-switch.css' %}" rel="stylesheet">
+  <link href="{% static 'student/stylesheets/jquery-ui-slider-pips.css' %}" rel="stylesheet">
+  <link rel="shortcut icon" href="{% static 'user_register/images/favicon.png' %}" />
+
+</head>
+<body>
+<div>
+<div class="container" style="background-color: #ffffff; padding-bottom: 20px;">
+    <div class="form-group" style="padding-top:20px;">
+    <div class="col-xs-6 col-md-6">
+            <img src="{% static 'user_register/images/learnaptive blue.png' %}" class="img-responsive" style="height: 56.69px; width: 200px;">
+
+        <div><i style="color: #808080; font-size: 9px;"> The scientific method for teaching science!</i></div>
+    </div>
+    <div class="col-xs-6 col-md-6" style="padding-top:15px; color: #666666;">
+    <div style="float: right;">
+    {% if n.photo %}
+        <img class="img-responsive dropdown-toggle" src="{{n.photo.url}}" alt="some picture here" style="width: 40px; height: 40px; border: 1px solid gray; display: inline-block;" id="dropdownMenu1" data-toggle="dropdown">&nbsp;&nbsp;&nbsp;{{name.title}}
+        {% else %}
+        <i class="fa fa-user fa-2x dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"></i>&nbsp;&nbsp;&nbsp;{{name.title}}
+        {% endif %}
+  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="/dashboard/">Home</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="signout">Logout</a></li>
+  </ul>
+  </div>
+<div style="display: none;">
+<form method="post" action="{% url 'registration:home' %}" id="logoutproform">{% csrf_token %}
+</form>
+</div>
+
+</div>
+    </div>
+    </div>
+
+    </div>
+    <div>
+    <div class="container">
+      <div class="form-group">
+        <div class="col-md-3">
+          <ul class="nav navbar-nav" style="border: 1px solid #CCCCCC;">
+            <li class="col-md-12 active"><a href="#">Account Basics</a></li>
+            <li class="col-md-12"><a href="#examplan">Exam Plan</a></li>
+            <li class="col-md-12"><a href="#aboutyou">About You</a></li>
+            <li class="col-md-12"><a href="#notification">Notification settings</a></li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; font-size: 20px; padding-top: 10px; padding-bottom: 10px;">Account basics</div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <label>Your Full name:</label>
+          <input type="text" class="form-control" name="profilename" value="{{fullname}}" style="height: 40px; border: 1px solid #CCCCCC;">
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <label>Your Email Address:</label>
+          <input type="email" class="form-control" value ="{{email}}" name="profileemail" style="height: 40px; border: 1px solid #CCCCCC;">
+          <br><a href="#">change password</a>
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <label>Your Alternate Email Address:</label>
+          <input type="email" class="form-control" name="alt_email" style="height: 40px; border: 1px solid #CCCCCC;">
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <div class="media">
+        <a class="pull-left" href="#" style="padding-top: 15px;">
+        {% if n.photo %}
+        <img class="media-object" src="{{n.photo.url}}" alt="some picture here" style="width: 100px; height: 100px;">
+        {% else %}
+        <img class="media-object" src="" alt="some picture here">
+        {% endif %}
+       </a>
+        <div class="media-body" style="padding-left: 20px;">
+        <!-- <p class="media-heading" align="center">personalize your account</p> -->
+       <!-- <button class="btn btn-default form-control" style="background-color: #666666; color: #fff;">upload picture</button> -->
+       <form method="post" enctype="multipart/form-data">
+{% csrf_token %}
+<p>{{ form.non_field_errors }}</p>
+<p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+<p>
+{{ form.docfile.errors }}
+{{ form.docfile }}
+</p>
+<p><button class="btn btn-default form-control" style="background-color: #666666; color: #fff;">upload picture</button></p>
+</form>
+       </div>
+        </div>
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-9">
+          <div class="col-md-12">
+          <div style="float: left; padding-top: 5px;"><b>Post comments and questions as anonymous?</b></div>
+          <div style="float: right;">
+          <label class="switch-light well" onclick="">
+          <input type="checkbox">
+          <span>
+          <span style="color: #fff;">Yes</span>
+          <span style="color: #fff;">No</span>
+          </span>
+
+  <a class="btn btn-primary" style="background-color: #fff;"></a>
+</label>
+</div></div>
+
+          </div>
+          <div class="col-md-3"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <div><b>Do you want to delete your account?</b></div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-5">
+          <button class="btn btn-primary form-control">delete</button>
+          </div>
+          <div class="col-md-5">
+          </div>
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+        </div>
+<div class="col-md-3" style="padding-top: 20px;">
+
+</div>
+       <div class="col-md-9" style="padding-top: 40px; padding-bottom: 40px;" id="examplan">
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; font-size: 20px; padding-top: 10px; padding-bottom: 10px;">Exam Plan</div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <label>When is your exam scheduled for?</label>
+          <div class="form-group has-feedback">
+           <label class="control-label sr-only" for="inputDate1">Input with Date</label>
+            <input type="text" class="form-control" id="inputDate1" name="examdate" style="height: 40px;">
+             <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+          </div>
+
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-10">
+          <label>At an average how many hours a day will you be able to study?</label>
+          <div class="form-group">
+    <div class="col-sm-12 col-md-12" style="padding-bottom: 30px;">
+    <div style="padding-bottom: 20px;">
+          <input type="radio" class="generic" name="planview" checked autocomplete="off">Generic
+          </div>
+          <div class="genericmode">
+    <div class="col-md-4 col-sm-4">
+    <div class="input-group">
+    <input type="text" name="timeweekday1" class="form-control" style="height: 56px;" value="3.5" id="incpro"  autocomplete="off">
+     <span class="input-group-addon"><div><div class="fa fa-sort-up inc1"></div></div><br>
+     <div><div class="fa fa-sort-down dec1"></div></div></span>
+    </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4">
+    <div class="input-group">
+    <input type="text" name="timeweekend1" class="form-control" style="height: 56px;" value="5"  autocomplete="off">
+     <span class="input-group-addon"><div><div class="fa fa-sort-up inc2"></div></div><br>
+     <div><div class="fa fa-sort-down dec2"></div></div></span>
+    </div>
+    </div>
+    <div class="col-md-4 col-sm-4"></div>
+    </div>
+    </div>
+    <div class="col-md-12" style="background: #fff; padding: 0px;">
+          <div class="col-md-12">
+          <div style="padding-bottom: 20px;">
+          <input type="radio" class="customize" name="planview" autocomplete="off">Customized daily hours
+          </div>
+
+          <div id="datepromodify">
+          </div>
+
+</div>
+</div>
+    </div>
+          </div>
+          <div class="col-md-2"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <div><b>What other tools are you using with EdGenie to prepare for exam?</b></div>
+          <div><input type="checkbox" name="c1" autocomplete="off">Youtube, blogs & articles</div>
+          <div><input type="checkbox" name="c2" autocomplete="off">Books</div>
+          <div><input type="checkbox" name="c3" autocomplete="off">Coaching classroom</div>
+          <div><input type="checkbox" name="c4" autocomplete="off">Online practice products</div>
+          <div style="padding-top: 10px;">Name other tools you use for prepration</div>
+          <input type="text" class="form-control" name="tools" style="height: 40px; border: 1px solid #CCCCCC;">
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <div style="padding-top: 10px;"><b>What are your dream collages? Tell us and we will get you closer to your goal</b></div>
+          <input type="text" class="form-control" name="collage" style="height: 40px; border: 1px solid #CCCCCC;">
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-9" style="padding-bottom: 40px;" id="aboutyou">
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; font-size: 20px; padding-top: 10px; padding-bottom: 10px;">About you</div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-left: 30px; padding-bottom: 25px;">
+          <label>You are a:</label><br>
+          <label class="radio-inline">
+          {% if gender == "male" %}
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked autocomplete="off"> Male
+          {% else %}
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" autocomplete="off"> Male
+  {% endif %}
+</label>
+<label class="radio-inline">
+{% if gender == "female" %}
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked autocomplete="off"> Female
+          {% else %}
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" autocomplete="off"> Female
+  {% endif %}
+</label>
+<label class="radio-inline">
+{% if not gender %}
+<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" checked autocomplete="off"> Unspecified
+{% else %}
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" autocomplete="off"> Unspecified
+{% endif %}
+</label>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="col-md-6">
+          <label>You were born on:</label>
+          <div class="form-group has-feedback">
+           <label class="control-label sr-only" for="inputDate2">Input with Date</label>
+            <input type="text" class="form-control" id="inputDate2" name="bornon" style="height: 40px;">
+             <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+             </div>
+             <div class="col-md-6"></div>
+          </div>
+          </div>
+<div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <label>Your phone number is:</label>
+          <input type="text" class="form-control" name="profilenumber" style="height: 40px; border: 1px solid #CCCCCC;">
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <label>Your Current Location:</label>
+          <input type="text" class="form-control" name="profilelocation" style="height: 40px; border: 1px solid #CCCCCC;">
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-3"></div>
+<div class="col-md-9" style="padding-bottom: 80px;" id="notification">
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; font-size: 20px; padding-top: 10px; padding-bottom: 10px;">Notifications settings</div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <form id="form1" method="get">
+          <div style="padding-bottom: 5px;"><b>Do you want to receive email from us?</b></div>
+          <label class="switch-light well" onclick="">
+          <input type="checkbox" checked name="c">
+          <span>
+          <span style="color: #fff;">Yes</span>
+          <span style="color: #fff;">No</span>
+          </span>
+
+  <a class="btn btn-primary" style="background-color: #fff;"></a>
+</label>
+</form>
+
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px; padding-left: 30px;">
+          <div class="form-group">
+          <div class="col-md-6">
+          <label>How frequently do you want us to email your performance?</label><br>
+          <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions1" id="inlineRadio10" value="everyday"> Everyday
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions1" id="inlineRadio20" value="onceaweek"> Once a week
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions1" id="inlineRadio30" value="never"> Never
+</label>
+          </div>
+          <div class="col-md-6"></div>
+          </div>
+          </div>
+
+          <div class="col-md-12" style="border: 1px solid #CCCCCC; padding-top: 30px; padding-bottom: 25px;">
+          <div class="form-group">
+          <div class="col-md-8">
+          <div style="padding-bottom: 5px;"><b>You will get notified when someone</b></div>
+          <div class="col-md-12">
+          <div style="float: left;"><b>Follow your post</b></div>
+          <div style="float: right;">
+          <label class="switch-light well" onclick="">
+          <input type="checkbox" checked>
+          <span>
+          <span style="color: #fff;">Yes</span>
+          <span style="color: #fff;">No</span>
+          </span>
+
+  <a class="btn btn-primary" style="background-color: #fff;"></a>
+</label></div>
+</div>
+<div class="col-md-12">
+<div style="float: left;"><b>Likes your post and comments</b></div>
+<div style="float: right;">
+          <label class="switch-light well" onclick="">
+          <input type="checkbox" checked>
+          <span>
+          <span style="color: #fff;">Yes</span>
+          <span style="color: #fff;">No</span>
+          </span>
+
+  <a class="btn btn-primary" style="background-color: #fff;"></a>
+</label></div>
+</div>
+<div class="col-md-12">
+<div style="float: left;"><b>Comments on your post</b></div>
+<div style="float: right;">
+          <label class="switch-light well" onclick="">
+          <input type="checkbox" checked>
+          <span>
+          <span style="color: #fff;">Yes</span>
+          <span style="color: #fff;">No</span>
+          </span>
+
+  <a class="btn btn-primary" style="background-color: #fff;"></a>
+</label></div>
+</div>
+<div class="col-md-12">
+<div style="float: left;"><b>Share your post or comment</b></div>
+<div style="float: right;">
+          <label class="switch-light well" onclick="">
+          <input type="checkbox">
+          <span>
+          <span style="color: #fff;">Yes</span>
+          <span style="color: #fff;">No</span>
+          </span>
+
+  <a class="btn btn-primary" style="background-color: #fff;"></a>
+</label></div>
+</div>
+<div class="col-md-12">
+<div style="float: left;"><b>Reports your post or comments</b></div>
+<div style="float: right;">
+          <label class="switch-light well" onclick="">
+          <input type="checkbox" checked>
+          <span>
+          <span style="color: #fff;">Yes</span>
+          <span style="color: #fff;">No</span>
+          </span>
+
+  <a class="btn btn-primary" style="background-color: #fff;"></a>
+</label></div>
+</div>
+
+          </div>
+          <div class="col-md-4"></div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <div>
+      <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" style="height: 70px;">
+  <div class="container" align="center">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+    <div class="col-md-6" style="padding-top: 20px;">
+      <button class="btn btn-primary form-control prosave">save</button>
+      </div>
+      <div class="col-md-6" style="padding-top: 20px;">
+      <button class="btn btn-primary form-control">cancel</button>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</nav>
+    </div>
+    <script src="{% static 'student/bootstrap/js/jquery.min.js' %}"></script>
+    <script src="{% static 'student/bootstrap/js/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/bootstrap.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery-ui.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery.flip.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery.flip.min.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/some.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/custom.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'student/bootstrap/js/jquery-ui-slider-pips.min.js' %}"></script>
+  <script>
+  $('.dropdown-toggle').dropdown();
+  $(document).navwithArrow1();
+  $(document).reloadStay1();
+  //$(document).incDecPro();
+  </script>
+  <script type="text/javascript">
+  $(document).incDecPro();
+  $('.dropdown-toggle').dropdown();
+  </script>
+  <script type="text/javascript">
+  $('.prosave').click(function(){
+    $('#form1').submit();
+  });
+  </script>
+  <script type="text/javascript">
+  $('.signout').click(function(){
+    $('#logoutproform').submit();
+  });
+</script>
+<script type="text/javascript">
+  // $("#datepromodify").niceScroll({cursorcolor:"#666666", cursorwidth:"7px", preservenativescrolling: true});
+
+  var cusplan = '<div class="col-md-12 slideplan">\
+          <div class="col-md-3">\
+          <div class="d" align="center"></div></div>\
+          <div class="col-md-1"><input type="text" style="display: none;" class="inp">\
+          <div class="dval"></div></div>\
+          <div class="col-md-8" style="padding-bottom: 10px;"><div class="slider2"></div></div>\
+          </div>';
+for(var i=0; i<20; i++){
+$('#datepromodify').append(cusplan);
+}
+var i = 0;
+$($('#datepromodify').children()).each(function(){
+    // var a = $($('#datepromodify').children()).index(this);
+    var did = "datemodal"+(i+1);
+    var dids = "#datemodal"+(i+1);
+    $($(this).find('.d')).attr('id', did);
+    // alert($($(this).find('.d')).attr('id'));
+    var amid = "amount"+(i+1);
+    var amids = "#amount"+(i+1);
+    $($(this).find('.inp')).attr('id', amid);
+    var dvalid = "val"+(i+1);
+    var dvalids = "#val"+(i+1);
+    $($(this).find('.dval')).attr('id', dvalid);
+    var slideid = "s"+(i+1);
+    var slideids = "#s"+(i+1);
+    $($(this).find('.slider2')).attr('id', slideid);
+    $(slideids).slider({ max: 16 , value: 8, min: 0, slide: function( event, ui ) {
+    $( amids ).val(ui.value);
+    var v1 = $(amids).val();
+    $(dvalids).text(v1+"hrs");
+    }
+     });
+    $( amids ).val($(slideids).slider("value"));
+    $(dvalids).text($(amids).val()+"hrs");
+    $(slideids).slider("pips");
+    var dayN= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var dayM = [ "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+        "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" ];
+          var today = new Date();
+          var curdate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + (i+1));
+          $(dids).html(curdate.getDate()+' '+dayM[curdate.getMonth()]+', '+dayN[curdate.getDay()]);
+          i = i + 1;
+    });
+</script>
+<script type="text/javascript">
+  $('.genericmode').show();
+      $('#datepromodify').hide();
+  $('.generic').click(function(){
+    $('.genericmode').show();
+      $('#datepromodify').hide();
+  });
+  $('.customize').click(function(){
+      $('#datepromodify').show();
+      $('.genericmode').hide();
+  });
+</script>
+  </body>

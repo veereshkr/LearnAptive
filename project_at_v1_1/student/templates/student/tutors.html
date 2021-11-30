@@ -1,0 +1,55 @@
+<div class="col-md-12"><h2>Tutors(231)</h2></div>
+{% for i in "abcdefghijklmno" %}
+<div class="col-md-12" style="padding-bottom: 15px;">
+<div class="col-md-2" style="border: 1px solid gray; padding: 10px;"><img src="" class="img-responsive" alt="Responsive image" style="height: 151px;"></div>
+<div class="col-md-10" style="border: 1px solid gray; padding: 14px;">
+	<div><a href="{% url 'students:tutorprofiles' username='Josh1' %}">Josh Atlas</a></div>
+	<div>San Francisco</div>
+	<div style="font-size: 12px;"><b>720</b> SAT Score</div>
+	<div style="font-size: 12px;"><b>12</b> students recommended me</div>
+	<div style="padding-bottom: 16px; font-size: 13px;">Average tutor rating</div>
+	<div><button class="btn btn-primary" id="message{{i}}">message</button></div>
+</div>
+</div>
+<div class="modal fade" id="messagemodal{{i}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="padding: 0px;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel" align="center">New Message</h4>
+      </div>
+      <div class="modal-body" id="messagebody{{i}}">
+      <div class="col-md-12">
+<div>To: Josh Atlas+{{i}}</div></div>
+<div class="col-md-12" style="padding-bottom: 20px;">
+<textarea cols="10" rows="6" placeholder="write your message..." class="form-control" id="textbody{{i}}"></textarea>
+</div>
+<div align="center">
+<button class="btn btn-primary" id="send{{i}}">send message</button>
+<button class="btn btn-primary" data-dismiss="modal">cancel</button>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% for i in 'abcdefghijklmno' %}
+<script type="text/javascript">
+	$('#message{{i}}').click(function(){
+		$('#messagemodal{{i}}').modal();
+	});
+
+	$('#send{{i}}').click(function(){
+    var mailbody = $('#textbody{{i}}').val();
+    var a = '<div align="center"><img src="/static/student/images/ajax-loader.gif" />Sending Message...</div>';
+    $(document).ajaxStart(function(){
+    $('#messagebody{{i}}').append(a);
+  });
+    var j = $.get('/mailsent', {m: mailbody}).done(function(data){
+      $('#messagebody{{i}}').html(data);
+    }).fail(function(){
+      alert("request failed");
+    });
+  });
+</script>
+{% endfor %}

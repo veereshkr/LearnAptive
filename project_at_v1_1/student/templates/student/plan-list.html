@@ -1,0 +1,171 @@
+<body>
+<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel" align="center">Modify Plan</h4>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+      <div class="col-md-12" style="background: #fff; padding: 0px;">
+      <div class="form-group">                         
+                            <div class="btn-group form-group col-xs-12 col-md-12" data-toggle="buttons">
+                            
+                              <label class="btn btn-default col-xs-6 col-md-6 active" id="label1" style="height: 50px;">
+                                <input type="radio" style="height: 50px;"><div style="padding-top: 10px;">Update details</div>
+                              </label>
+                              <label class="btn btn-default col-xs-6 col-md-6" id="label2" style="height: 50px;">
+                                <input type="radio" style="height: 50px;"><div style="padding-top: 10px;">Re-order topics</div>
+                              </label>
+                            </div>                         
+                          </div> 
+                          </div>
+<div id="section3" style="background: #fff;">
+<div class="col-md-12" style="background: #fff; padding: 0px;">
+<div class="form-group">
+          <div class="col-md-10">
+          <label>When are you expected to take the test?</label>
+          <div class="form-group has-feedback">
+           <label class="control-label sr-only" for="inputD">Input with Date</label>
+            <input type="text" class="form-control" id="inputD" name="examdate2" style="height: 40px;">
+             <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+          </div>
+          </div>
+          <div class="col-md-2"></div>
+          </div>
+          </div>
+          <div class="col-md-12" style="background: #fff; padding: 0px;">
+          <div class="form-group">
+          <div class="col-md-10">
+          <div>At an average how many hours a day will you be able to study?</div>
+          <div style="padding-bottom: 20px;">
+          <input type="radio">Generic
+          </div>
+          <div class="form-group">
+    <div class="col-md-12" style="padding-bottom: 30px;">
+    <div class="col-md-4 col-sm-4">
+    <div class="input-group"> 
+    <input type="text" name="timeweekday2" class="form-control" style="height: 56px;" value="3.5">
+     <span class="input-group-addon"><div><div class="fa fa-sort-up inc1"></div></div><br>
+     <div><div class="fa fa-sort-down dec1"></div></div></span>
+    </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4">
+    <div class="input-group"> 
+    <input type="text" name="timeweekend2" class="form-control" style="height: 56px;" value="5">
+     <span class="input-group-addon"><div><div class="fa fa-sort-up inc2"></div></div><br>
+     <div><div class="fa fa-sort-down dec2"></div></div></span>
+    </div>
+    </div>
+    <div class="col-md-4 col-sm-4"></div>
+    </div>
+    </div>
+          </div>
+          <div class="col-md-2"></div>
+          </div>          
+          </div>
+          <div class="col-md-12" style="background: #fff; padding: 0px;">
+          <div class="col-md-12">
+          <div style="padding-bottom: 20px;">
+          <input type="radio">Customized daily hours
+          </div>
+          
+          <div id="datemodify">
+          </div>
+          
+</div>
+</div>
+</div>
+<div>.</div>
+<section id="section2" style="display: none;">
+<h5 align="center" style="color: #666666;">This is a sequence of topics we have planned for you. Drag and drop topics to re-order what you want to study first</h5>
+<ul class="sortable1 list">
+<li class="curapp"><div style="padding-top:5px; float: left; padding-right: 20px;"><div class="square1"></div></div>Topic 1</li>
+<li class="curapp"><div style="padding-top:5px; float: left; padding-right: 20px;"><div class="square2"></div></div>Topic 2</li>
+<li class="curapp"><div style="padding-top:5px; float: left; padding-right: 20px;"><div class="square1"></div></div>Topic 3</li>
+<li class="curapp"><div style="padding-top:5px; float: left; padding-right: 20px;"><div class="square1"></div></div>Topic 4</li>
+<li class="curapp"><div style="padding-top:5px; float: left; padding-right: 20px;"><div class="square2"></div></div>Topic 5</li>
+<li class="curapp"><div style="padding-top:5px; float: left; padding-right: 20px;"><div class="square1"></div></div>Topic 6</li>
+<li class="curapp"><div style="padding-top:5px; float: left; padding-right: 20px;"><div class="square1"></div></div>Topic 7</li>
+<li class="curapp"><div style="padding-top:5px; float: left; padding-right: 20px;"><div class="square2"></div></div>Topic 8</li>
+<li class="curapp"><div style="padding-top:5px; float: left; padding-right: 20px;"><div class="square1"></div></div>Topic 9</li>
+</ul>
+</section>
+<div class="modal-footer-custom" align="center" style="background: #fff;">
+      <div style="padding-bottom: 50px;">
+      <div class="form-group">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+      <div class="col-md-6">
+        <button type="button" class="btn btn-default form-control" data-dismiss="modal" style="background-color: #006699; border: 1px solid #006699; color: #fff;" id="reset">Reset</button></div>
+        <div class="col-md-6">
+        <button type="button" class="btn btn-primary form-control" style="background-color: #999999; border: 1px solid #999999; color: #fff;" id="save">Save</button></div>
+        </div>
+        <div class="col-md-2"></div>
+        </div>
+        </div>
+      </div>
+</div>
+
+  <script type="text/javascript">
+  $('.sortable1').sortable();
+  </script>
+  <script type="text/javascript">
+  $(document).incDecMod();
+$("#datemodify").niceScroll({cursorcolor:"#666666", cursorwidth:"7px", preservenativescrolling: true});
+
+  var cusplan = '<div class="col-md-12 slideplan">\
+          <div class="col-md-3">\
+          <div class="d" align="center"></div></div>\
+          <div class="col-md-1"><input type="text" style="display: none;" class="inp">\
+          <div class="dval"></div></div>\
+          <div class="col-md-8" style="padding-bottom: 10px;"><div class="slider2"></div></div>\
+          </div>';
+for(var i=0; i<20; i++){
+$('#datemodify').append(cusplan);
+}
+var i = 0;
+$($('#datemodify').children()).each(function(){
+    var a = $($('#datemodify').children()).index(this);
+    var did = "datemodal"+(i+1);
+    var dids = "#datemodal"+(i+1);
+    $($(this).find('.d')).attr('id', did);
+    //alert($('.d').attr('id'));
+    var amid = "amount"+(i+1);
+    var amids = "#amount"+(i+1);
+    $($(this).find('.inp')).attr('id', amid);
+    var dvalid = "val"+(i+1);
+    var dvalids = "#val"+(i+1);
+    $($(this).find('.dval')).attr('id', dvalid);
+    var slideid = "s"+(i+1);
+    var slideids = "#s"+(i+1);
+    $($(this).find('.slider2')).attr('id', slideid);
+    $(slideids).slider({ max: 16 , value: 8, min: 0, slide: function( event, ui ) {
+    $( amids ).val(ui.value);
+    var v1 = $(amids).val();
+    $(dvalids).text(v1+"hrs");
+    }
+     });
+    $( amids ).val($(slideids).slider("value"));
+    $(dvalids).text($(amids).val()+"hrs");
+    $(slideids).slider("pips");
+    var dayN= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var dayM = [ "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+        "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" ];
+          var today = new Date();
+          var curdate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + (i+1));
+          $(dids).html(curdate.getDate()+' '+dayM[curdate.getMonth()]+', '+dayN[curdate.getDay()]);
+          i = i + 1;
+    });
+  </script>
+  
+<script type="text/javascript">
+  $('#label2').click(function(){
+    $('#section2').css('display', 'block');
+    $('#section3').css('display', 'none');
+    $('.modal-content').css('padding-bottom', '1px');
+  });
+  $('#label1').click(function(){
+    $('#section2').css('display', 'none');
+    $('#section3').css('display', 'block');
+  });
+</script>
+  </body>

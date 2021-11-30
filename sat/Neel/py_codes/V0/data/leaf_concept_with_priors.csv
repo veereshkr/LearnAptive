@@ -1,0 +1,239 @@
+,index,WBS,Task.Name,Score.Groups,link,begin,end,Predecessors,leaf,prob
+4,4,1.1.1.,Sum and Subtraction,1,need to do ourselves,,,,TRUE,97
+6,6,1.1.2.1.,Introduction to Multiplication and division,1,need to do ourselves,,,4,TRUE,97
+7,7,1.1.2.2.,Multiplication Table,NA,need to do ourselves,,,6,TRUE,97
+8,8,1.1.2.3.,How to do long Multiplication,NA,https://www.youtube.com/watch?v=0jhf1ldvP-o,0:00,2:13,"6, 7",TRUE,97
+9,9,1.1.2.4.,How to do long division,NA,"https://www.youtube.com/watch?v=MbpmP1esh-Q
+https://www.youtube.com/watch?v=eIUoIhfupuA",,,"6, 7",TRUE,97
+10,10,1.1.3.,PEDMAS,2,https://www.youtube.com/watch?v=3Mu3ciXkemg,0:09,2:08,,TRUE,85
+12,12,1.2.1.,Introduction to Number Lines,3,https://www.youtube.com/watch?v=g4Q5LOQG6OQ,,,4,TRUE,62
+13,13,1.2.2.,Inequality,3,https://www.youtube.com/watch?v=dTwZ5N126gw,,,12,TRUE,62
+15,15,1.3.1.,Introduction to Integers,2,https://www.youtube.com/watch?v=LTSjIgfA7NY,,,4,TRUE,85
+17,17,1.3.2.1.,Introduction to Odd-Even Numbers,3,https://www.youtube.com/watch?v=xtd5Dk7mvgE,,,15,TRUE,62
+18,18,1.3.2.2.,Addition of Odd-Even,3,https://www.youtube.com/watch?v=dP5WZzNxYVA,1:20,3:26,17,TRUE,62
+19,19,1.3.2.3.,Multiplication of Odd-Even,3,https://www.youtube.com/watch?v=dP5WZzNxYVA,3:27,4:26,"17, 6",TRUE,62
+21,21,1.4.1.,Introduction to fractions and decimals,3,"https://www.youtube.com/watch?v=ER3mpiG7x242
+https://www.youtube.com/watch?v=Vmn9JEzEZuc","0:00`
+0:00","1:21
+0:51","12, 6",TRUE,62
+22,22,1.4.2.,Reciprocals,3,https://www.youtube.com/watch?v=ywZGdmdZYk4,,,21,TRUE,62
+24,24,1.4.3.1.,Simplification of a fraction,3,https://www.youtube.com/watch?v=8JrORrjqLWs,,,"56, 21",TRUE,62
+25,25,1.4.3.2.,Interchanging improper and mixed fractions,3,"https://www.youtube.com/watch?v=IByEp5brtw4
+https://www.youtube.com/watch?v=si5Qf4lfPh0",0:17,,21,TRUE,62
+26,26,1.4.3.3.,converting fraction into decimals,3,https://www.youtube.com/watch?v=NBzqxRIa9BY,,,21,TRUE,62
+27,27,1.4.3.4.,Addition and Subtraction of Fractions,4,https://www.youtube.com/watch?v=Bim6Lw92rjY,,,"21, 53",TRUE,30
+28,28,1.4.3.5.,Multiplication of fractions,3,https://www.youtube.com/watch?v=CTKMK1ZGLuk,,,21,TRUE,62
+29,29,1.4.3.6.,Division of fractions,3,"https://www.youtube.com/watch?v=jXTSbGd6HtU
+https://www.youtube.com/watch?v=-zMp-hBAzLs",,,21,TRUE,62
+31,31,1.4.4.1.,Multiplication of decimals,4,https://www.youtube.com/watch?v=JEHejQphIYc,,2:18,21,TRUE,30
+32,32,1.4.4.2.,Division of decimals,4,https://www.youtube.com/watch?v=nfTTVYwN9tc,,,21,TRUE,30
+33,33,1.4.4.3.,Place Value,3,https://www.youtube.com/watch?v=K6NM8rWhdxU,,,21,TRUE,62
+34,34,1.4.4.4.,Scientific Notation,2,https://www.youtube.com/watch?v=zwBsL-NgkjE,0:17,,21,TRUE,85
+37,37,1.5.1.1.,Introduction to squaring,2,https://www.youtube.com/watch?v=tp87SUS4mMI,0:23,2:15,"6, 15",TRUE,85
+38,38,1.5.1.2.,Squaring Negative Integers,3,https://www.youtube.com/watch?v=VhJyEUdBpkk,,,"6, 15",TRUE,62
+39,39,1.5.1.3.,Perfect Square Numbers,2,,,,37,TRUE,85
+40,40,1.5.2.,Square root of integers,3,"https://www.youtube.com/watch?v=tp87SUS4mMI
+https://www.youtube.com/watch?v=5_gvcR6W_4g",2:28,3:55,"37, 57",TRUE,62
+41,41,1.5.3.,Square of Fractions,4,,,,37,TRUE,30
+44,44,1.6.1.1.,Introduction to Divisibility,1,https://www.youtube.com/watch?v=LUmbdLGeVQw,,2:37,6,TRUE,97
+46,46,1.6.1.2.1,Divisible by 3,2,https://www.youtube.com/watch?v=2G_Jr_XpnY4,0:55,2:06,44,TRUE,85
+47,47,1.6.1.2.2,Divisible by 5,2,https://www.youtube.com/watch?v=0qMsYaM1ito,,,44,TRUE,85
+48,48,1.6.1.2.3,Divisible by 7,2,,,,44,TRUE,85
+49,49,1.6.1.2.4,Divisible by 9,2,https://www.youtube.com/watch?v=XAzFGx3Ruig,,0:54,44,TRUE,85
+50,50,1.6.1.2.5,Divisible by 10 and its powers,2,,,,44,TRUE,85
+52,52,1.6.1.3.1.,Introduction to Multiples,3,https://www.youtube.com/watch?v=LUmbdLGeVQw,4:33,5:11,6,TRUE,62
+53,53,1.6.1.3.2.,LCM,4,https://www.youtube.com/watch?v=QUem_2dkB9I,,,"6, 57",TRUE,30
+54,54,1.6.2.,remainders,4,,,,6,TRUE,30
+56,56,1.6.3.1.,Introduction to factorization,3,https://www.youtube.com/watch?v=gYvIcPLg3NI,,,6,TRUE,62
+57,57,1.6.3.2.,Prime Factorization,4,https://www.youtube.com/watch?v=XWq8bplP-_E,,,59,TRUE,30
+58,58,1.6.3.3.,GCF,4,"https://www.youtube.com/watch?v=jFd-6EPfnec
+https://www.youtube.com/watch?v=Ck_9LlabVt8",,2:27,57,TRUE,30
+59,59,1.6.4.,Prime Numbers,4,https://www.youtube.com/watch?v=9pgA-H77BLc,,,56,TRUE,30
+62,62,1.7.1.1.,Introduction to Percents,3,https://www.youtube.com/watch?v=Lvr2YsxG10o,,,21,TRUE,62
+63,63,1.7.1.2.,Percent Change,3,https://www.youtube.com/watch?v=TpZXX-GsmB0,,,62,TRUE,62
+64,64,1.7.1.3.,Chain Percentage,4,,,,62,TRUE,30
+65,65,1.7.1.4.,Inverting Percent change,4,,,,63,TRUE,30
+67,67,1.7.2.1.,Introduction to ratio,3,https://www.youtube.com/watch?v=bIKmw0aTmYc,,,21,TRUE,62
+68,68,1.7.2.2.,Chain ratio,4,,,,67,TRUE,30
+69,69,1.7.3.,Proportion,1,"https://www.youtube.com/watch?v=JeugfMGDSIc
+https://www.youtube.com/watch?v=P_aQPxr2G_4",,,67,TRUE,97
+71,71,1.8.1.,Introduction to sequence,2,https://www.youtube.com/watch?v=p-rc5mTDt9E,,1:41,6,TRUE,85
+72,72,1.8.2.,Arithmetic Progression,3,"https://www.youtube.com/watch?v=_cooC3yG_p0
+https://www.youtube.com/watch?v=xWHfQGBzgbc",,2:44,71,TRUE,62
+73,73,1.8.3.,Geometric Progression,4,https://www.youtube.com/watch?v=dIGLhLMsy2U,,2:18,71,TRUE,30
+74,74,1.8.4.,Mixed,4,,,,71,TRUE,30
+75,75,1.9.,Arithmetic word Problems,4,,,,6,TRUE,30
+77,77,1.10.1.,Listing all possible options,4,,,,95,TRUE,30
+79,79,1.10.2.1.,Introduction to permutation,5,https://www.youtube.com/watch?v=uYwjFWqVSBE,,,6,TRUE,7
+80,80,1.10.2.2.,Restricted Permutations,5,"https://www.youtube.com/watch?v=yZ_0HmTn0oI
+https://www.youtube.com/watch?v=zxxrR2oa0-M
+https://www.youtube.com/watch?v=dW6r1T-Y1Mk",".
+.
+3:26","1:50
+3:36
+6:50",79,TRUE,7
+81,81,1.10.2.3.,Permutation of items where multiple copies of same item are present,5,https://www.youtube.com/watch?v=DpRjzwbwfUk,4:18,8:08,79,TRUE,7
+83,83,1.10.3.1.,Introduction to combination,5,https://www.youtube.com/watch?v=uYwjFWqVSBE,,,6,TRUE,7
+84,84,1.10.3.2.,Making team of...,5,,,,83,TRUE,7
+85,85,1.10.3.3.,All possible pair,5,,,,83,TRUE,7
+87,87,1.11.1.,Introduction to Exponents,2,https://www.youtube.com/watch?v=XZRQhkii0h0,,,6,TRUE,85
+88,88,1.11.2.,Inequalities of exponents,3,,,,87,TRUE,62
+90,90,1.11.3.1.,Introduction to multiplication of terms with same base,4,"https://www.youtube.com/watch?v=kITJ6qH7jS0
+https://www.youtube.com/watch?v=kITJ6qH7jS0","2:22
+5:43","5:01
+8:33",87,TRUE,30
+91,91,1.11.3.2.,Negative exponents,5,https://www.youtube.com/watch?v=JnpqlXN9Whw,,2:43,90,TRUE,7
+93,93,1.11.4.1.,Introduction to multiplication of exponents,4,https://www.youtube.com/watch?v=rEtuPhl6930,0:53,2:27,87,TRUE,30
+94,94,1.11.4.2.,Fractional Expoents,5,"https://www.youtube.com/watch?v=tOuCdKqO6-s
+https://www.youtube.com/watch?v=tOuCdKqO6-s","5:11
+8:18","7:22
+10:14",93,TRUE,7
+95,95,1.12.,Logical Reasoning,1,,,,,TRUE,97
+97,97,1.13.1.,Speed and Distance,2,,,,"6, 21",TRUE,85
+98,98,1.13.2.,Work Rate,2,,,,"6, 21",TRUE,85
+100,100,2.1.,Basic Algebraic operations,1,"https://www.youtube.com/watch?v=DBV-R5it_Kw
+https://www.youtube.com/watch?v=-1Mxuqifo1k",,2:55,6,TRUE,97
+102,102,2.2.1.,difference of square,2,https://www.youtube.com/watch?v=tvnOWIoeeaU,,,100,TRUE,85
+103,103,2.2.2.,taking common terms out,2,https://www.youtube.com/watch?v=FuHThqvKaKU,,,100,TRUE,85
+104,104,2.2.3.,middle term expansion of quadratic expression,2,https://www.youtube.com/watch?v=YMBjk_v-0j8,,,100,TRUE,85
+105,105,2.2.4.,cube difference,2,https://www.youtube.com/watch?v=eXjxF1I9o4E,,3:26,100,TRUE,85
+107,107,2.3.1.,Introduction to Exponents,3,,,,100,TRUE,62
+108,108,2.3.2.,Inequalities of exponents,4,,,,"13, 107",TRUE,30
+110,110,2.3.3.1.,Introduction to multiplication of terms with same base,4,"https://www.youtube.com/watch?v=A1wKTiBTsfk
+https://www.youtube.com/watch?v=A1wKTiBTsfk","2:22
+4:26","3:17
+5:10",107,TRUE,30
+111,111,2.3.3.2.,Negative exponents,5,https://www.youtube.com/watch?v=A1wKTiBTsfk,6:51,,110,TRUE,7
+113,113,2.3.4.1.,Introduction to multiplication of exponents,4,https://www.youtube.com/watch?v=A1wKTiBTsfk,3:54,4:25,107,TRUE,30
+114,114,2.3.4.2.,Fractional Expoents,5,https://www.youtube.com/watch?v=8HfWGjQNlhk,,,113,TRUE,7
+116,116,2.4.1,Introduction to solving equation,2,https://www.youtube.com/watch?v=lYAIF5vXCPM,,,100,TRUE,85
+117,117,2.4.2,solving one variable in terms of other,5,https://www.youtube.com/watch?v=oOmxNr26fWs,,,100,TRUE,7
+118,118,2.4.3,Solving Radical Equations,5,https://www.youtube.com/watch?v=y4C81qAa3pY,,,107,TRUE,7
+119,119,2.5.,Absolute Value,5,,,,12,TRUE,7
+120,120,2.6.,Algebraic Inequalities,4,https://www.youtube.com/watch?v=l4r2Pw0OqOg,,,"13, 100",TRUE,30
+121,121,2.7.,Linear equation of two variables,3,,,,100,TRUE,62
+122,122,2.8.,Quadratic Equations,4,https://www.youtube.com/watch?v=kuimoHMleug,,,"100, 102, 103, 104",TRUE,30
+123,123,2.9.,Rational Equation,5,https://www.youtube.com/watch?v=NK2ngJeD2wA,,,100,TRUE,7
+125,125,2.10.1.,Direct Proportionality,2,https://www.youtube.com/watch?v=9tNfdZTQbKo,,,100,TRUE,85
+126,126,2.10.2.,Inverse proportionality,2,https://www.youtube.com/watch?v=swAs0v7u4Vk,,,100,TRUE,85
+127,127,2.11.,Algebraic word problems,1,https://www.youtube.com/watch?v=gtFldyOhdGA,,,100,TRUE,97
+129,129,2.12.1.,Basics of Function,3,"https://www.youtube.com/watch?v=5VPL6V9IH7s
+https://www.youtube.com/watch?v=147_tOEfrUg",,,253,TRUE,62
+130,130,2.12.2.,Linear functions,3,https://www.youtube.com/watch?v=AqIMrHOBM4g,,,129,TRUE,62
+131,131,2.12.3.,Quadratic function,4,https://www.youtube.com/watch?v=yEcRnEzKq1c,2:18,4:00,129,TRUE,30
+133,133,2.12.4.1.,Introduction to graph of functions,4,https://www.youtube.com/watch?v=rZZq0-VTraU,,,"129, 218",TRUE,30
+134,134,2.12.4.2.,Graph of linear functions,4,"https://www.youtube.com/watch?v=EbuRufY41pc
+https://www.youtube.com/watch?v=m5LzS7GqjgE",,,"130, 133",TRUE,30
+135,135,2.12.4.3.,Graph of quadratic function,5,https://www.youtube.com/watch?v=vphPafWDZkw,,,"131, 133",TRUE,7
+136,136,2.12.4.4.,Finding root of function from graph,6,https://www.youtube.com/watch?v=6_F8mUCPGf0,,,133,TRUE,1
+137,137,2.12.4.5.,Translation of function and effect on graph,6,"https://www.youtube.com/watch?v=B4NJFnTxiQY
+https://www.youtube.com/watch?v=Ak-KxgW3RJM",,,133,TRUE,1
+138,138,2.12.5.,nested functions,5,https://www.youtube.com/watch?v=1x7gv3N6FD8,,,129,TRUE,7
+139,139,2.12.6.,Function of two variables,3,make ourselves,,,129,TRUE,62
+140,140,2.12.7.,Deriving functions from tables of observations,4,"https://www.youtube.com/watch?v=VfHSrBRTDQQ
+https://www.youtube.com/watch?v=p0CEGUg8PXU",,,133,TRUE,30
+143,143,3.1.1.,Introduction to points and lines,1,,,,,TRUE,97
+144,144,3.1.2.,Colinear points,2,,,,143,TRUE,85
+146,146,3.2.1.,Introduction to angle and angle measurements,1,,,,143,TRUE,97
+147,147,3.2.2.,Angles at intersecting lines,4,,,,146,TRUE,30
+148,148,3.2.3.,Angles generated by intersecting two parallel lines,4,,,,146,TRUE,30
+149,149,3.2.4.,Angles of a triangle,2,,,,148,TRUE,85
+150,150,3.2.5.,Angles of a polygon,3,,,,149,TRUE,62
+152,152,3.3.1.,Introduction to Triangle,1,,,,143,TRUE,97
+153,153,3.3.2.,Perimeter of a triangle,2,,,,152,TRUE,85
+154,154,3.3.3.,Area of a triangle,3,,,,"100, 152",TRUE,62
+156,156,3.3.4.1.,Introduction to equilateral Triangle,2,,,,"152, 149",TRUE,85
+157,157,3.3.4.2.,Area of equilateral Triangles,3,,,,"154, 156",TRUE,62
+159,159,3.3.5.1.,Introduction to Isosceles Triangle,2,,,,"152, 149",TRUE,85
+160,160,3.3.5.2.,Area of Isosceles Triangles,3,,,,"154, 159",TRUE,62
+162,162,3.3.6.1.,Introduction to Right angled triangle,3,,,,"152, 149",TRUE,62
+163,163,3.3.6.2.,Pythagoras' Theorem and its application,4,,,,"37, 40, 162",TRUE,30
+164,164,3.3.6.3.,Area of Right angled triangle,3,,,,"154, 162",TRUE,62
+166,166,3.3.7.1.,SAS Rule,3,,,,"149, 152",TRUE,62
+167,167,3.3.7.2.,AAS rule,3,,,,"149, 152",TRUE,62
+168,168,3.3.7.3.,SSS rule,3,,,,"149, 152",TRUE,62
+169,169,3.3.7.4.,Rght triangle rule,3,,,,"149, 152",TRUE,62
+171,171,3.3.8.1.,Introduction to similar triangle,5,,,,"149, 152",TRUE,7
+172,172,3.3.8.2.,proportional sides,5,,,,"171, 69",TRUE,7
+173,173,3.3.9.,Triangle Inequality,3,,,,"149, 120",TRUE,62
+175,175,3.4.1.,Introduction to Quadrilaterals,1,,,,"143, 149",TRUE,97
+177,177,3.4.2.1.,Introduction to parallelogram,2,,,,175,TRUE,85
+178,178,3.4.2.2.,Area of parallelogram,4,,,,177,TRUE,30
+180,180,3.4.3.1.,Introduction to Rectangle,2,,,,175,TRUE,85
+181,181,3.4.3.2.,Diagonal of rectangle,4,,,,"180, 163",TRUE,30
+182,182,3.4.3.3.,Area of the ribbon around the rectangle,4,,,,175,TRUE,30
+183,183,3.4.4.,Square,2,,,,180,TRUE,85
+184,184,3.5.,Polygon,3,,,,"143, 149",TRUE,62
+186,186,3.6.1.,Introduction to circle,1,,,,143,TRUE,97
+188,188,3.6.2.1.,Tangent is perpendicular to radius,6,,,,"186, 146",TRUE,1
+189,189,3.6.2.2.,Circles tangent to each other,6,,,,188,TRUE,1
+190,190,3.6.3.,Length of circumference,2,,,,186,TRUE,85
+191,191,3.6.4.,Idea of Radian,4,,,,"190, 146",TRUE,30
+193,193,3.6.5.1.,Angle in centre is twice of angle at circumference,4,,,,159,TRUE,30
+194,194,3.6.5.2.,traingle with one side as diameter is always right angled,5,,,,193,TRUE,7
+197,197,3.7.1.1.,Introduction to Cuboids,4,,,,180,TRUE,30
+198,198,3.7.1.2.,Volume,4,,,,197,TRUE,30
+199,199,3.7.1.3.,Diagonals,5,,,,"197, 163",TRUE,7
+201,201,3.7.2.1.,Introduction to Cylinders,4,,,,186,TRUE,30
+202,202,3.7.2.2.,Curve surface Area,5,,,,"201, 180",TRUE,7
+203,203,3.7.2.3.,Volume,5,,,,201,TRUE,7
+205,205,3.7.3.1.,Introduction to sphere and hemisphere,5,,,,186,TRUE,7
+206,206,3.7.3.2.,Volume,5,,,,205,TRUE,7
+207,207,3.7.3.3.,Outer Surface Area,5,,,,205,TRUE,7
+208,208,3.7.3.4.,crosssection area at x distance from centre,NA,,,,"186, 163",TRUE,7
+210,210,3.7.4.1.,Introduction to prism,5,,,,"152, 180",TRUE,7
+211,211,3.7.4.2.,Surface Areas,5,,,,"154, 210",TRUE,7
+212,212,3.7.4.3.,Volume,5,,,,"154, 210",TRUE,7
+214,214,3.7.5.1.,Introduction to cone,5,,,,186,TRUE,7
+215,215,3.7.5.2.,Volume,5,,,,214,TRUE,7
+216,216,3.7.5.3.,surface Area,5,,,,214,TRUE,7
+218,218,3.8.1.,Introduction to Co-ordinate Geometry,4,,,,12,TRUE,30
+219,219,3.8.2.,Distance between two points,4,,,,"163, 218",TRUE,30
+220,220,3.8.3.,Midpoint of a line segment,4,,,,218,TRUE,30
+222,222,3.8.4.1.,Introduction to slope of a straight line,4,,,,"218, 134",TRUE,30
+223,223,3.8.4.2.,Slope of parallel lines,5,,,,222,TRUE,7
+224,224,3.8.4.3.,slope of perpendicular lines,5,,,,222,TRUE,7
+226,226,3.9.1.,Translation,6,,,,143,TRUE,1
+227,227,3.9.2.,Rotation,6,,,,143,TRUE,1
+228,228,3.9.3.,Reflection,6,,,,143,TRUE,1
+229,229,3.10.,Locus,5,,,,143,TRUE,7
+230,230,3.11.,Making equation out of Geometric figure,2,,,,"134, 135",TRUE,85
+231,231,3.12.,Word Geometry Problem,3,,,,218,TRUE,62
+234,234,4.1.1.,Pie Chart,4,,,,62,TRUE,30
+235,235,4.1.2.,Line Graph,1,,,,,TRUE,97
+236,236,4.1.3.,Bar/ Column Diagram,1,,,,,TRUE,97
+237,237,4.1.4.,Pictograph,1,,,,,TRUE,97
+238,238,4.1.5.,Coordinate Graph,4,,,,218,TRUE,30
+239,239,4.2.,convert words into graph,5,,,,218,TRUE,7
+242,242,4.3.1.1.,Introduction to AM,2,,,,6,TRUE,85
+243,243,4.3.1.2.,Idea of AM in Algebra,3,,,,"100, 242",TRUE,62
+244,244,4.3.1.3.,Weighted AM,3,,,,242,TRUE,62
+246,246,4.3.2.1.,no of observation is odd,5,https://www.youtube.com/watch?v=oCz49GXbbGY,,,13,TRUE,7
+247,247,4.3.2.2.,No of observation is even,5,https://www.youtube.com/watch?v=9-_4e-VDpk0,,,13,TRUE,7
+248,248,4.3.3.,Mode,2,https://www.youtube.com/watch?v=khP3ge7a2Yk,,,,TRUE,85
+250,250,4.3.4.1.,Introduction to Probability,5,,,,"253, 6",TRUE,7
+251,251,4.3.4.2.,Independence of events,6,,,,250,TRUE,1
+253,253,4.4.1.,Introduction to set,4,,,,,TRUE,30
+254,254,4.4.2.,Union,4,,,,"253, 4",TRUE,30
+255,255,4.4.3.,Intersection,4,,,,"253, 4",TRUE,30
+256,256,4.4.4.,Set Word Problem (Venn Diagram),4,,,,"253, 4",TRUE,30
+257,257,4.4.5.,Inclusion Exclusion ?,5,,,,"254, 255",TRUE,7
+259,259,5.1.,"used ""choose"" but means permutation",5,,,,79,TRUE,7
+260,260,5.2.,clubbing more than one variables together and treating them as a single variable and solve,2,,,,,TRUE,85
+261,261,5.3.,Back Calculation,2,,,,,TRUE,85
+262,262,5.4.,Answer can be obtained without explicitly solving equations,2,,,,,TRUE,85
+263,263,5.5.,Solution is integer,3,,,,,TRUE,62
+264,264,5.6.,Guestimate,2,,,,,TRUE,85
+265,265,5.7.,optimisation,4,,,,,TRUE,30
+266,266,5.8.,Solution is not integer,4,,,,,TRUE,30
+267,267,5.9.,"when ""x is positive"" is mentioned, omit negative or 0 solution",3,,,,,TRUE,62
+268,268,5.10.,Finding complement of the answer instead of solving directly,5,,,,,TRUE,7
+269,269,5.11.,Negative Question,3,,,,,TRUE,62
+270,270,5.12.,Redundant Informations,3,,,,,TRUE,62
+271,271,5.13.,anything product 0 is 0,4,,,,,TRUE,30
+272,272,5.14.,Corrections to AM,4,,,,,TRUE,30
+273,273,5.15.,different units,3,,,,,TRUE,62
+274,274,5.16.,Decomposition of geometric figures into well known ones,4,,,,,TRUE,30
+275,275,5.17.,sum is symmetric,3,,,,,TRUE,62
+276,276,5.18.,Shaded region doesn't always ask for area,4,,,,,TRUE,30
+277,277,5.19.,plug in,4,,,,,TRUE,30

@@ -1,0 +1,11 @@
+<div class="form-group ques">
+
+<script>
+var t = '{{type}}';
+var textstr = '{{s}}';
+var divdata = [];
+var noptions = parseInt('{{arr|length}}');
+{% for i in arr %}
+	divdata.push('{{i}}');
+{% endfor %}
+</script>
